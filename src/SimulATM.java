@@ -18,12 +18,13 @@ public class SimulATM extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
 
-        Parent root = FXMLLoader.load(getClass().getResource("gui/Welcome.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("gui/SimulatedATM.fxml"));
 
-        Scene scene = new Scene(root, 300, 275);
+        Scene scene = new Scene(root, 600, 600);
 
         primaryStage.setTitle("Welcome");
         primaryStage.setScene(scene);
+        primaryStage.setResizable(false);
         primaryStage.show();
     }
 }

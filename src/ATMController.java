@@ -1,6 +1,8 @@
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.text.Text;
+import javafx.scene.control.TextArea;
+
+import java.awt.*;
 
 /**
  * Created by egrstudent on 11/2/16.
@@ -8,11 +10,11 @@ import javafx.scene.text.Text;
 public class ATMController {
 
     @FXML
-    private Text actiontarget;
+    private TextArea atm_display;
 
     @FXML
     protected void handleSubmitButtonAction(ActionEvent event) {
 
-        actiontarget.setText("Sign in button pressed");
+        atm_display.setText("Hey, a thing!");
     }
 }

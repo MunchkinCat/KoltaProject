@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<GridPane> fx:controller="ATMController"
+<GridPane fx:controller="ATMController"
           xmlns:fx="http://javafx.com/fxml"
           alignment="center" hgap="10" vgap="10">
 
@@ -17,67 +17,64 @@
 
     <!-- ADD LEFT SCREEN BUTTONS -->
 
-    <HBox spacing="10"
-                 alignment="CENTER"
-                 GridPane.columnIndex="0"
-                 GridPane.rowIndex="0">
-        <Button onAction=""/>
+    <HBox alignment="TOP_CENTER"
+          GridPane.columnIndex="0"
+          GridPane.rowIndex="0">
+        <Button onAction="#handleSubmitButtonAction"/>
     </HBox>
 
-    <HBox spacing="10"
-          alignment="CENTER"
+    <HBox alignment="TOP_CENTER"
           GridPane.columnIndex="0"
           GridPane.rowIndex="1">
-        <Button onAction=""/>
+        <Button onAction="#handleSubmitButtonAction"/>
     </HBox>
 
-    <HBox spacing="10"
-          alignment="CENTER"
+    <HBox alignment="TOP_CENTER"
           GridPane.columnIndex="0"
           GridPane.rowIndex="2">
-        <Button onAction=""/>
+        <Button onAction="#handleSubmitButtonAction"/>
     </HBox>
 
-    <HBox spacing="10"
-          alignment="CENTER"
+    <HBox alignment="TOP_CENTER"
           GridPane.columnIndex="0"
           GridPane.rowIndex="3">
-        <Button onAction=""/>
+        <Button onAction="#handleSubmitButtonAction"/>
     </HBox>
 
     <!-- ADD RIGHT SCREEN BUTTONS -->
 
-    <HBox spacing="10"
-          alignment="CENTER"
+    <HBox alignment="TOP_CENTER"
           GridPane.columnIndex="10"
           GridPane.rowIndex="0">
-        <Button onAction=""/>
+        <Button onAction="#handleSubmitButtonAction"/>
     </HBox>
 
-    <HBox spacing="10"
-          alignment="CENTER"
+    <HBox alignment="TOP_CENTER"
           GridPane.columnIndex="10"
           GridPane.rowIndex="1">
-        <Button onAction=""/>
+        <Button onAction="#handleSubmitButtonAction"/>
     </HBox>
 
-    <HBox spacing="10"
-          alignment="CENTER"
+    <HBox alignment="TOP_CENTER"
           GridPane.columnIndex="10"
           GridPane.rowIndex="2">
-        <Button onAction=""/>
+        <Button onAction="#handleSubmitButtonAction"/>
     </HBox>
 
-    <HBox spacing="10"
-          alignment="CENTER"
+    <HBox alignment="TOP_CENTER"
           GridPane.columnIndex="10"
           GridPane.rowIndex="3">
-        <Button onAction=""/>
+        <Button onAction="#handleSubmitButtonAction"/>
     </HBox>
 
     <!-- ADD SCREEN TEXT DISPLAY -->
 
-    <
+    <TextArea fx:id="atm_display"
+              GridPane.columnIndex="2"
+              GridPane.rowIndex="0"
+              GridPane.columnSpan="7"
+              GridPane.rowSpan="4"
+              editable="false"/>
 
     <!-- ADD NUMBER PAD -->
 
