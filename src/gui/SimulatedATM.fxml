@@ -37,7 +37,8 @@
 
     <HBox alignment="TOP_CENTER"
           GridPane.columnIndex="0"
-          GridPane.rowIndex="3">
+          GridPane.rowIndex="3"
+            >
         <Button onAction="#handleSubmitButtonAction"/>
     </HBox>
 
