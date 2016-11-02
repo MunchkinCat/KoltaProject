@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!--
+THIS IS AN EXAMLE FXML FILE
+It is not for use in project
+-->
+
 <?import java.net.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
@@ -25,7 +30,8 @@
            GridPane.rowIndex="1"/>
 
     <TextField GridPane.columnIndex="1"
-               GridPane.rowIndex="1"/>
+               GridPane.rowIndex="1"
+            disable="true"/>
 
     <Label text="Password:"
            GridPane.columnIndex="0"
