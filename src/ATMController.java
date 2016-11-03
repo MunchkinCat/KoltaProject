@@ -1,6 +1,6 @@
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.TextArea;
+import javafx.scene.text.Text;
 
 import java.awt.*;
 
@@ -10,11 +10,12 @@ import java.awt.*;
 public class ATMController {
 
     @FXML
-    private TextArea atm_display;
+    private Text screen_line1, screen_line2,
+                     screen_line3, screen_line4;
 
     @FXML
     protected void handleSubmitButtonAction(ActionEvent event) {
 
-        atm_display.setText("Hey, a thing!");
+        screen_line1.setText("Hello this is a test...");
     }
 }

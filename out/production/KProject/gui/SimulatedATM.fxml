@@ -1,228 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.net.*?>
-<?import javafx.geometry.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
 
-<GridPane fx:controller="ATMController"
-          xmlns:fx="http://javafx.com/fxml"
-          alignment="center" hgap="10" vgap="10">
-
-
-    <padding>
-        <Insets top="25" right="25" bottom="10" left="25"/>
-    </padding>
-
-    <!-- ADD LEFT SCREEN BUTTONS -->
-
-    <HBox alignment="TOP_CENTER"
-          GridPane.columnIndex="0"
-          GridPane.rowIndex="0">
-        <Button fx:id="button_screen_left1"
-                onAction="#handleSubmitButtonAction"/>
-    </HBox>
-
-    <HBox alignment="TOP_CENTER"
-          GridPane.columnIndex="0"
-          GridPane.rowIndex="1">
-        <Button fx:id="button_screen_left2"
-                onAction="#handleSubmitButtonAction"/>
-    </HBox>
-
-    <HBox alignment="TOP_CENTER"
-          GridPane.columnIndex="0"
-          GridPane.rowIndex="2">
-        <Button fx:id="button_screen_left3"
-                onAction="#handleSubmitButtonAction"/>
-    </HBox>
-
-    <HBox alignment="TOP_CENTER"
-          GridPane.columnIndex="0"
-          GridPane.rowIndex="3"
-            >
-        <Button fx:id="button_screen_left4"
-                onAction="#handleSubmitButtonAction"/>
-    </HBox>
-
-    <!-- ADD RIGHT SCREEN BUTTONS -->
-
-    <HBox alignment="TOP_CENTER"
-          GridPane.columnIndex="10"
-          GridPane.rowIndex="0">
-        <Button fx:id="button_screen_right1"
-                onAction="#handleSubmitButtonAction"/>
-    </HBox>
-
-    <HBox alignment="TOP_CENTER"
-          GridPane.columnIndex="10"
-          GridPane.rowIndex="1">
-        <Button fx:id="button_screen_right2"
-                onAction="#handleSubmitButtonAction"/>
-    </HBox>
-
-    <HBox alignment="TOP_CENTER"
-          GridPane.columnIndex="10"
-          GridPane.rowIndex="2">
-        <Button fx:id="button_screen_right3"
-                onAction="#handleSubmitButtonAction"/>
-    </HBox>
-
-    <HBox alignment="TOP_CENTER"
-          GridPane.columnIndex="10"
-          GridPane.rowIndex="3">
-        <Button fx:id="button_screen_right4"
-                onAction="#handleSubmitButtonAction"/>
-    </HBox>
-
-    <!-- ADD SCREEN TEXT DISPLAY -->
-
-    <VBox alignment="CENTER"
-          GridPane.columnSpan="7"
-          GridPane.rowSpan="4">
-
-        <Text fx:id="screen_line1"
-              textAlignment="CENTER"/>
-
-        <Text fx:id="screen_line2"
-              textAlignment="CENTER"/>
-
-        <Text fx:id="screen_line3"
-              textAlignment="CENTER"/>
-
-        <Text fx:id="screen_line4"
-              textAlignment="CENTER"/>
-    </VBox>
-
-    <!-- ADD NUMBER PAD -->
-
-    <HBox alignment="TOP_CENTER"
-          GridPane.columnIndex="4"
-          GridPane.rowIndex="5">
-        <Button fx:id="button_num1" textAlignment="CENTER" text="1"
-                onAction="#handleSubmitButtonAction"/>
-    </HBox>
-
-    <HBox alignment="TOP_CENTER"
-          GridPane.columnIndex="5"
-          GridPane.rowIndex="5">
-        <Button fx:id="button_num2" textAlignment="CENTER" text="2"
-                onAction="#handleSubmitButtonAction"/>
-    </HBox>
-
-    <HBox alignment="TOP_CENTER"
-          GridPane.columnIndex="6"
-          GridPane.rowIndex="5">
-        <Button fx:id="button_num3" textAlignment="CENTER" text="3"
-                onAction="#handleSubmitButtonAction"/>
-    </HBox>
-
-    <HBox alignment="TOP_CENTER"
-          GridPane.columnIndex="4"
-          GridPane.rowIndex="6">
-        <Button fx:id="button_num4" textAlignment="CENTER" text="4"
-                onAction="#handleSubmitButtonAction"/>
-    </HBox>
-
-    <HBox alignment="TOP_CENTER"
-          GridPane.columnIndex="5"
-          GridPane.rowIndex="6">
-        <Button fx:id="button_num5" textAlignment="CENTER" text="5"
-                onAction="#handleSubmitButtonAction"/>
-    </HBox>
-
-    <HBox alignment="TOP_CENTER"
-          GridPane.columnIndex="6"
-          GridPane.rowIndex="6">
-        <Button fx:id="button_num6" textAlignment="CENTER" text="6"
-                onAction="#handleSubmitButtonAction"/>
-    </HBox>
-
-    <HBox alignment="TOP_CENTER"
-          GridPane.columnIndex="4"
-          GridPane.rowIndex="7">
-        <Button fx:id="button_num7" textAlignment="CENTER" text="7"
-                onAction="#handleSubmitButtonAction"/>
-    </HBox>
-
-    <HBox alignment="TOP_CENTER"
-          GridPane.columnIndex="5"
-          GridPane.rowIndex="7">
-        <Button fx:id="button_num8" textAlignment="CENTER" text="8"
-                onAction="#handleSubmitButtonAction"/>
-    </HBox>
-
-    <HBox alignment="TOP_CENTER"
-          GridPane.columnIndex="6"
-          GridPane.rowIndex="7">
-        <Button fx:id="button_num9" textAlignment="CENTER" text="9"
-                onAction="#handleSubmitButtonAction"/>
-    </HBox>
-
-    <HBox alignment="TOP_CENTER"
-          GridPane.columnIndex="5"
-          GridPane.rowIndex="8">
-        <Button fx:id="button_num0" textAlignment="CENTER" text="0"
-                onAction="#handleSubmitButtonAction"/>
-    </HBox>
-
-    <!-- ADD AUX CONTROL BUTTONS -->
-
-    <HBox alignment="TOP_LEFT"
-          GridPane.columnIndex="0"
-          GridPane.rowIndex="5"
-          GridPane.columnSpan="3">
-        <Button fx:id="button_printer" textAlignment="CENTER" text=""
-                onAction="#handleSubmitButtonAction"/>
-    </HBox>
-
-    <HBox alignment="TOP_RIGHT"
-          GridPane.columnIndex="8"
-          GridPane.rowIndex="5"
-          GridPane.columnSpan="3">
-        <Button fx:id="button_cardslot" textAlignment="CENTER" text=""
-                onAction="#handleSubmitButtonAction"/>
-    </HBox>
-
-    <HBox alignment="TOP_RIGHT"
-          GridPane.columnIndex="9"
-          GridPane.rowIndex="6"
-          GridPane.columnSpan="3">
-        <Button fx:id="button_enter" textAlignment="CENTER" text="Enter"
-                onAction="#handleSubmitButtonAction"/>
-    </HBox>
-
-    <HBox alignment="TOP_RIGHT"
-          GridPane.columnIndex="9"
-          GridPane.rowIndex="7"
-          GridPane.columnSpan="3">
-        <Button fx:id="button_clear" textAlignment="CENTER" text="Clear"
-                onAction="#handleSubmitButtonAction"/>
-    </HBox>
-
-    <HBox alignment="TOP_RIGHT"
-          GridPane.columnIndex="9"
-          GridPane.rowIndex="8"
-          GridPane.columnSpan="3">
-        <Button fx:id="button_cancel" textAlignment="CENTER" text="Cancel"
-                onAction="#handleSubmitButtonAction"/>
-    </HBox>
-
-    <HBox alignment="TOP_RIGHT"
-          GridPane.columnIndex="7"
-          GridPane.rowIndex="9"
-          GridPane.columnSpan="4">
-        <Button fx:id="button_deposit" textAlignment="CENTER" text=""
-                onAction="#handleSubmitButtonAction"/>
-    </HBox>
-
-    <HBox alignment="TOP_LEFT"
-          GridPane.columnIndex="0"
-          GridPane.rowIndex="9"
-          GridPane.columnSpan="4">
-        <Button fx:id="button_cash" textAlignment="CENTER" text=""
-                onAction="#handleSubmitButtonAction"/>
-    </HBox>
-
-</GridPane>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="603.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.102-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <GridPane hgap="10.0" prefHeight="344.0" prefWidth="560.0" vgap="10.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="181.0" minWidth="10.0" prefWidth="45.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="472.0" minWidth="10.0" prefWidth="417.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="133.0" minWidth="0.0" prefWidth="55.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" />
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" GridPane.rowIndex="1" />
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" GridPane.rowIndex="2" />
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" GridPane.rowIndex="3" />
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" GridPane.columnIndex="2" />
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" textAlignment="CENTER" GridPane.columnIndex="1" />
+            <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+   </center>
+   <bottom>
+      <GridPane hgap="10.0" prefHeight="315.0" prefWidth="560.0" vgap="10.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="326.0" minHeight="10.0" prefHeight="239.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <padding>
+            <Insets bottom="20.0" top="50.0" />
+         </padding>
+         <children>
+            <GridPane hgap="5.0" prefHeight="22.0" prefWidth="180.0" vgap="5.0" GridPane.columnIndex="1">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="1" />
+                  <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="3" GridPane.columnIndex="2" />
+                  <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="4" GridPane.rowIndex="1" />
+                  <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="2" GridPane.columnIndex="1" />
+                  <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="7" GridPane.rowIndex="2" />
+                  <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
+            <GridPane>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="51.0" minHeight="10.0" prefHeight="22.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="207.0" minHeight="10.0" prefHeight="196.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="72.0" minHeight="0.0" prefHeight="27.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="26.0" prefWidth="180.0" text="Receipt Printer" />
+                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Cash Dispenser" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+            <GridPane hgap="10.0" vgap="10.0" GridPane.columnIndex="2">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="79.0" minWidth="10.0" prefWidth="55.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="122.0" minWidth="10.0" prefWidth="115.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="72.0" minHeight="0.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="214.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="214.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="214.0" minHeight="10.0" prefHeight="49.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="87.0" minHeight="0.0" prefHeight="29.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="26.0" prefWidth="86.0" text="Card Slot" GridPane.columnSpan="2147483647" />
+                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Deposit Slot" GridPane.columnSpan="2147483647" GridPane.rowIndex="4" />
+                  <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Enter" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Clear" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Cancel" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+   </bottom>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</BorderPane>
