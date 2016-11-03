@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="commons-io-2">
+    <CLASSES>
+      <root url="file://$USER_HOME$/ApacheCommons/commons-io-2.5" />
+      <root url="file://$USER_HOME$/ApacheCommons/commons-lang3-3.4" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="file://$USER_HOME$/ApacheCommons/commons-io-2.5/docs" />
+      <root url="file://$USER_HOME$/ApacheCommons/commons-lang3-3.4/apidocs" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="file://$USER_HOME$/ApacheCommons/commons-io-2.5-src/src/main/java" />
+      <root url="file://$USER_HOME$/ApacheCommons/commons-io-2.5-src/src/test/java" />
+      <root url="file://$USER_HOME$/ApacheCommons/commons-lang3-3.4-src/src/main/java" />
+      <root url="file://$USER_HOME$/ApacheCommons/commons-lang3-3.4-src/src/test/java" />
+    </SOURCES>
+    <jarDirectory url="file://$USER_HOME$/ApacheCommons/commons-io-2.5" recursive="false" />
+    <jarDirectory url="file://$USER_HOME$/ApacheCommons/commons-lang3-3.4" recursive="false" />
+  </library>
+</component>

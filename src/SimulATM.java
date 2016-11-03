@@ -2,6 +2,7 @@
  * Created by egrstudent on 11/2/16.
  */
 
+import gui.ScreenLoader;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -22,8 +23,14 @@ public class SimulATM extends Application {
 
         Scene scene = new Scene(root, 600, 600);
 
+        ScreenLoader loader = new ScreenLoader();
+        String[] welcomeScreen = loader.getScreen(1);
+
         primaryStage.setTitle("Welcome");
         primaryStage.setScene(scene);
+
+
+
         primaryStage.setResizable(false);
         primaryStage.show();
     }
