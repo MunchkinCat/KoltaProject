@@ -20,26 +20,30 @@
     <HBox alignment="TOP_CENTER"
           GridPane.columnIndex="0"
           GridPane.rowIndex="0">
-        <Button onAction="#handleSubmitButtonAction"/>
+        <Button fx:id="button_screen_left1"
+                onAction="#handleSubmitButtonAction"/>
     </HBox>
 
     <HBox alignment="TOP_CENTER"
           GridPane.columnIndex="0"
           GridPane.rowIndex="1">
-        <Button onAction="#handleSubmitButtonAction"/>
+        <Button fx:id="button_screen_left2"
+                onAction="#handleSubmitButtonAction"/>
     </HBox>
 
     <HBox alignment="TOP_CENTER"
           GridPane.columnIndex="0"
           GridPane.rowIndex="2">
-        <Button onAction="#handleSubmitButtonAction"/>
+        <Button fx:id="button_screen_left3"
+                onAction="#handleSubmitButtonAction"/>
     </HBox>
 
     <HBox alignment="TOP_CENTER"
           GridPane.columnIndex="0"
           GridPane.rowIndex="3"
             >
-        <Button onAction="#handleSubmitButtonAction"/>
+        <Button fx:id="button_screen_left4"
+                onAction="#handleSubmitButtonAction"/>
     </HBox>
 
     <!-- ADD RIGHT SCREEN BUTTONS -->
@@ -47,38 +51,178 @@
     <HBox alignment="TOP_CENTER"
           GridPane.columnIndex="10"
           GridPane.rowIndex="0">
-        <Button onAction="#handleSubmitButtonAction"/>
+        <Button fx:id="button_screen_right1"
+                onAction="#handleSubmitButtonAction"/>
     </HBox>
 
     <HBox alignment="TOP_CENTER"
           GridPane.columnIndex="10"
           GridPane.rowIndex="1">
-        <Button onAction="#handleSubmitButtonAction"/>
+        <Button fx:id="button_screen_right2"
+                onAction="#handleSubmitButtonAction"/>
     </HBox>
 
     <HBox alignment="TOP_CENTER"
           GridPane.columnIndex="10"
           GridPane.rowIndex="2">
-        <Button onAction="#handleSubmitButtonAction"/>
+        <Button fx:id="button_screen_right3"
+                onAction="#handleSubmitButtonAction"/>
     </HBox>
 
     <HBox alignment="TOP_CENTER"
           GridPane.columnIndex="10"
           GridPane.rowIndex="3">
-        <Button onAction="#handleSubmitButtonAction"/>
+        <Button fx:id="button_screen_right4"
+                onAction="#handleSubmitButtonAction"/>
     </HBox>
 
     <!-- ADD SCREEN TEXT DISPLAY -->
 
-    <TextArea fx:id="atm_display"
-              GridPane.columnIndex="2"
-              GridPane.rowIndex="0"
-              GridPane.columnSpan="7"
-              GridPane.rowSpan="4"
-              editable="false"/>
+    <VBox alignment="CENTER"
+          GridPane.columnSpan="7"
+          GridPane.rowSpan="4">
+
+        <Text fx:id="screen_line1"
+              textAlignment="CENTER"/>
+
+        <Text fx:id="screen_line2"
+              textAlignment="CENTER"/>
+
+        <Text fx:id="screen_line3"
+              textAlignment="CENTER"/>
+
+        <Text fx:id="screen_line4"
+              textAlignment="CENTER"/>
+    </VBox>
 
     <!-- ADD NUMBER PAD -->
 
+    <HBox alignment="TOP_CENTER"
+          GridPane.columnIndex="4"
+          GridPane.rowIndex="5">
+        <Button fx:id="button_num1" textAlignment="CENTER" text="1"
+                onAction="#handleSubmitButtonAction"/>
+    </HBox>
+
+    <HBox alignment="TOP_CENTER"
+          GridPane.columnIndex="5"
+          GridPane.rowIndex="5">
+        <Button fx:id="button_num2" textAlignment="CENTER" text="2"
+                onAction="#handleSubmitButtonAction"/>
+    </HBox>
+
+    <HBox alignment="TOP_CENTER"
+          GridPane.columnIndex="6"
+          GridPane.rowIndex="5">
+        <Button fx:id="button_num3" textAlignment="CENTER" text="3"
+                onAction="#handleSubmitButtonAction"/>
+    </HBox>
+
+    <HBox alignment="TOP_CENTER"
+          GridPane.columnIndex="4"
+          GridPane.rowIndex="6">
+        <Button fx:id="button_num4" textAlignment="CENTER" text="4"
+                onAction="#handleSubmitButtonAction"/>
+    </HBox>
+
+    <HBox alignment="TOP_CENTER"
+          GridPane.columnIndex="5"
+          GridPane.rowIndex="6">
+        <Button fx:id="button_num5" textAlignment="CENTER" text="5"
+                onAction="#handleSubmitButtonAction"/>
+    </HBox>
+
+    <HBox alignment="TOP_CENTER"
+          GridPane.columnIndex="6"
+          GridPane.rowIndex="6">
+        <Button fx:id="button_num6" textAlignment="CENTER" text="6"
+                onAction="#handleSubmitButtonAction"/>
+    </HBox>
+
+    <HBox alignment="TOP_CENTER"
+          GridPane.columnIndex="4"
+          GridPane.rowIndex="7">
+        <Button fx:id="button_num7" textAlignment="CENTER" text="7"
+                onAction="#handleSubmitButtonAction"/>
+    </HBox>
+
+    <HBox alignment="TOP_CENTER"
+          GridPane.columnIndex="5"
+          GridPane.rowIndex="7">
+        <Button fx:id="button_num8" textAlignment="CENTER" text="8"
+                onAction="#handleSubmitButtonAction"/>
+    </HBox>
+
+    <HBox alignment="TOP_CENTER"
+          GridPane.columnIndex="6"
+          GridPane.rowIndex="7">
+        <Button fx:id="button_num9" textAlignment="CENTER" text="9"
+                onAction="#handleSubmitButtonAction"/>
+    </HBox>
+
+    <HBox alignment="TOP_CENTER"
+          GridPane.columnIndex="5"
+          GridPane.rowIndex="8">
+        <Button fx:id="button_num0" textAlignment="CENTER" text="0"
+                onAction="#handleSubmitButtonAction"/>
+    </HBox>
+
     <!-- ADD AUX CONTROL BUTTONS -->
+
+    <HBox alignment="TOP_LEFT"
+          GridPane.columnIndex="0"
+          GridPane.rowIndex="5"
+          GridPane.columnSpan="3">
+        <Button fx:id="button_printer" textAlignment="CENTER" text=""
+                onAction="#handleSubmitButtonAction"/>
+    </HBox>
+
+    <HBox alignment="TOP_RIGHT"
+          GridPane.columnIndex="8"
+          GridPane.rowIndex="5"
+          GridPane.columnSpan="3">
+        <Button fx:id="button_cardslot" textAlignment="CENTER" text=""
+                onAction="#handleSubmitButtonAction"/>
+    </HBox>
+
+    <HBox alignment="TOP_RIGHT"
+          GridPane.columnIndex="9"
+          GridPane.rowIndex="6"
+          GridPane.columnSpan="3">
+        <Button fx:id="button_enter" textAlignment="CENTER" text="Enter"
+                onAction="#handleSubmitButtonAction"/>
+    </HBox>
+
+    <HBox alignment="TOP_RIGHT"
+          GridPane.columnIndex="9"
+          GridPane.rowIndex="7"
+          GridPane.columnSpan="3">
+        <Button fx:id="button_clear" textAlignment="CENTER" text="Clear"
+                onAction="#handleSubmitButtonAction"/>
+    </HBox>
+
+    <HBox alignment="TOP_RIGHT"
+          GridPane.columnIndex="9"
+          GridPane.rowIndex="8"
+          GridPane.columnSpan="3">
+        <Button fx:id="button_cancel" textAlignment="CENTER" text="Cancel"
+                onAction="#handleSubmitButtonAction"/>
+    </HBox>
+
+    <HBox alignment="TOP_RIGHT"
+          GridPane.columnIndex="7"
+          GridPane.rowIndex="9"
+          GridPane.columnSpan="4">
+        <Button fx:id="button_deposit" textAlignment="CENTER" text=""
+                onAction="#handleSubmitButtonAction"/>
+    </HBox>
+
+    <HBox alignment="TOP_LEFT"
+          GridPane.columnIndex="0"
+          GridPane.rowIndex="9"
+          GridPane.columnSpan="4">
+        <Button fx:id="button_cash" textAlignment="CENTER" text=""
+                onAction="#handleSubmitButtonAction"/>
+    </HBox>
 
 </GridPane>
