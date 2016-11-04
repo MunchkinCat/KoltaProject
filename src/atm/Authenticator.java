@@ -16,7 +16,7 @@ public class Authenticator {
     private String path;
 
     public Authenticator() {
-        path = FileUtils.getUserDirectoryPath() + "/IdeaProjects/KProject" +
+        path = FileUtils.getUserDirectoryPath() + "/IdeaProjects/KoltaProject" +
                 "/src/atm/accounts.txt";
     }
 

@@ -16,7 +16,7 @@ public class AccountManager {
     private String path;
 
     public AccountManager() {
-        path = FileUtils.getUserDirectoryPath() + "/IdeaProjects/KProject" +
+        path = FileUtils.getUserDirectoryPath() + "/IdeaProjects/KoltaProject" +
                 "/src/atm/accounts.txt";
     }
 

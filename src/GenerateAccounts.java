@@ -16,7 +16,7 @@ import java.util.List;
 
 public class GenerateAccounts {
 
-    private static String path = FileUtils.getUserDirectoryPath() + "/IdeaProjects/KProject" +
+    private static String path = FileUtils.getUserDirectoryPath() + "/IdeaProjects/KoltaProject" +
             "/src/atm/accounts.txt";
 
     public static void main(String[] args) {
