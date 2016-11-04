@@ -236,6 +236,8 @@ public class ATMController {
             configure(5);
         } else {
             screen_row1.setText("INCORRECT PIN");
+            pin = "";
+            screen_row4.setText("____");
         }
     }
 
