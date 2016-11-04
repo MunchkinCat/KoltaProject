@@ -6,7 +6,6 @@ package atm;
 public class Account {
 
     private double balance;
-    private long PAN; // not sure what this is for
     private double withdrawAmount;
     private double depositAmount;
     private String firstName;
@@ -16,7 +15,6 @@ public class Account {
 
     public Account() {
         balance = 0;
-        PAN = 0;
         withdrawAmount = 0;
         depositAmount = 0;
         firstName = "";
@@ -26,17 +24,12 @@ public class Account {
     }
 
     public Account(String firstName, String lastName, String pin, String card) {
-        this(firstName, lastName, pin, card, 0);
-    }
-
-    public Account(String firstName, String lastName, String pin, String card, long PAN) {
         withdrawAmount = 0;
         depositAmount = 0;
         this.firstName = firstName;
         this.lastName = lastName;
         this.pin = pin;
         this.card = card;
-        this.PAN = PAN;
         this.balance = 0;
     }
 
