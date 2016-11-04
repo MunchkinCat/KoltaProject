@@ -3,12 +3,13 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<BorderPane fx:controller="gui.ATMController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="603.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.102-ea" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="603.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.102-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ATMController">
    <center>
       <GridPane hgap="10.0" prefHeight="344.0" prefWidth="560.0" vgap="10.0" BorderPane.alignment="CENTER">
         <columnConstraints>
@@ -34,7 +35,7 @@
             <Label fx:id="screen_row1" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" textAlignment="CENTER" GridPane.columnIndex="1" />
             <Label fx:id="screen_row2" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Welcome" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1" />
             <Label fx:id="screen_row3" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="please insert your" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <Label fx:id="screen_row4" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="ATM card" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="screen_row4" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="19-digit ATM card #" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3" />
          </children>
       </GridPane>
    </center>
@@ -89,12 +90,13 @@
                <children>
                   <Button fx:id="button_printer" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="26.0" prefWidth="180.0" text="Receipt Printer" />
                   <Button fx:id="button_dispenser" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Cash Dispenser" GridPane.rowIndex="2" />
+                  <Label fx:id="label_receipt" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.rowIndex="1" />
                </children>
             </GridPane>
             <GridPane hgap="10.0" vgap="10.0" GridPane.columnIndex="2">
               <columnConstraints>
-                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="79.0" minWidth="10.0" prefWidth="55.0" />
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="122.0" minWidth="10.0" prefWidth="115.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="79.0" minWidth="10.0" prefWidth="24.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="146.0" minWidth="10.0" prefWidth="146.0" />
               </columnConstraints>
               <rowConstraints>
                 <RowConstraints maxHeight="72.0" minHeight="0.0" prefHeight="30.0" vgrow="SOMETIMES" />
@@ -104,11 +106,13 @@
                 <RowConstraints maxHeight="87.0" minHeight="0.0" prefHeight="29.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Button fx:id="button_cardslot" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleCardInsertion" prefHeight="26.0" prefWidth="86.0" text="Card Slot" GridPane.columnSpan="2147483647" />
-                  <Button fx:id="button_deposit" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Deposit Slot" GridPane.columnSpan="2147483647" GridPane.rowIndex="4" />
+                  <Button fx:id="button_cardslot" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleCardInsertion" prefHeight="26.0" prefWidth="24.0" text="&gt;" />
+                  <Button fx:id="button_deposit" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="&gt;" GridPane.rowIndex="4" />
                   <Button fx:id="button_enter" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Enter" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                   <Button fx:id="button_clear" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Clear" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                   <Button fx:id="button_cancel" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Cancel" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="input_card" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Card #" GridPane.columnIndex="1" />
+                  <TextField fx:id="input_deposit" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="\$ Deposit" GridPane.columnIndex="1" GridPane.rowIndex="4" />
                </children>
             </GridPane>
          </children>

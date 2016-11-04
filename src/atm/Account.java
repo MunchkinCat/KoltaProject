@@ -7,24 +7,35 @@ public class Account {
 
     private double balance;
     private long PAN; // not sure what this is for
-    private double[] withdraw_deposit; // keeps track of how much has been
-            // withdrawn in this transaction (index 0) and how much deposited
-            // in the same (index 1)
+    private double withdrawAmount;
+    private double depositAmount;
     private String firstName;
     private String lastName;
-    private int pin; // why?
+    private String pin;
+    private String card;
 
-    public Account(String firstName, String lastName, int pin) {
-        this(firstName, lastName, pin, 0);
+    public Account() {
+        balance = 0;
+        PAN = 0;
+        withdrawAmount = 0;
+        depositAmount = 0;
+        firstName = "";
+        lastName = "";
+        pin = "";
+        card = "";
     }
 
-    public Account(String firstName, String lastName, int pin, long PAN) {
-        withdraw_deposit = new double[2];
-        withdraw_deposit[0] = 0;
-        withdraw_deposit[1] = 0;
+    public Account(String firstName, String lastName, String pin, String card) {
+        this(firstName, lastName, pin, card, 0);
+    }
+
+    public Account(String firstName, String lastName, String pin, String card, long PAN) {
+        withdrawAmount = 0;
+        depositAmount = 0;
         this.firstName = firstName;
         this.lastName = lastName;
         this.pin = pin;
+        this.card = card;
         this.PAN = PAN;
         this.balance = 0;
     }
@@ -42,21 +53,34 @@ public class Account {
     }
 
     public double getDepositAmount() {
-        return withdraw_deposit[1];
+        return depositAmount;
     }
 
     public double getWithdrawAmount() {
-        return withdraw_deposit[0];
+        return withdrawAmount;
+    }
+
+    public String getPin() {
+        return pin;
+    }
+
+    public String getCard() {
+        return card;
     }
 
     public void withdraw(double amount) {
         balance -= amount;
-        withdraw_deposit[0] += amount;
+        withdrawAmount += amount;
     }
 
     public void deposit(double amount) {
         balance += amount;
-        withdraw_deposit[1] += amount;
+        depositAmount += amount;
+    }
+
+    public void resetWithdrawDepositTracker() {
+        withdrawAmount = 0;
+        depositAmount = 0;
     }
 
     public boolean isSufficientFunds(double amount) {

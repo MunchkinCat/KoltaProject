@@ -1,10 +1,14 @@
 package gui;
 
+import atm.Account;
+import atm.AccountManager;
+import atm.Authenticator;
 import gui.ScreenLoader;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 
 /**
  * Created by egrstudent on 11/2/16.
@@ -19,6 +23,12 @@ public class ATMController {
     private int sourceScreen = 1;
 
     private String pin = "";
+    private String card = "";
+
+    private Account account = null;
+
+    @FXML
+    private TextField input_deposit, input_card;
 
     @FXML
     private Label screen_row1, screen_row2,
@@ -43,10 +53,15 @@ public class ATMController {
         // If card inserted on welcome screen, proceed.
         // Else, consider as force-removing card,
         // and terminate session, returning to welcome.
-        if (sourceScreen == 1) {
+
+        Authenticator auth = new Authenticator();
+        if (sourceScreen != 1) {
+            configure(1);
+        } else if (auth.validCard(input_card.getText())) {
+            card = input_card.getText();
             configure(2);
         } else {
-            configure(1);
+            configure(4);
         }
     }
 
@@ -56,7 +71,10 @@ public class ATMController {
             case 1:
                 break;
             case 2:
-
+                checkPIN();
+                break;
+            default:
+                break;
         }
     }
 
@@ -121,42 +139,42 @@ public class ATMController {
         // Configures button actions according to screen.
         // Also deals with some other global vars.
         switch (screenNum) {
-            case 1:
-                button_cardslot.setOnAction(this::handleCardInsertion);
+            case 1: // Home screen
+                setCardTextActive(true);
+                input_card.clear();
                 pin = "";
                 break;
-            case 2:
-                button_cardslot.setOnAction(this::handleCardInsertion);
+            case 2: // PIN entry
                 button_clear.setOnAction(this::handleClearButton);
                 button_cancel.setOnAction(this::handleCancelButton);
                 button_enter.setOnAction(this::handleEnterButton);
                 activateNumpad();
                 break;
-            case 3:
+            case 3: // PIN error
                 break;
-            case 4:
+            case 4: // Card error
                 break;
-            case 5:
+            case 5: // Transaction selection
                 break;
-            case 6:
+            case 6: // Balance display
                 break;
-            case 7:
+            case 7: // Withdrawal request amount entry
                 break;
-            case 8:
+            case 8: // Insufficient funds
                 break;
-            case 9:
+            case 9: // Dispenser denomination error
                 break;
-            case 10:
+            case 10: // Withdrawal processing error
                 break;
-            case 11:
+            case 11: // Cash dispensed
                 break;
-            case 12:
+            case 12: // Deposit processing error
                 break;
-            case 13:
+            case 13: // Ready for deposit
                 break;
-            case 14:
+            case 14: // Printed balance
                 break;
-            case 15:
+            case 15: // End of transaction
                 break;
             default:
                 break;
@@ -210,6 +228,17 @@ public class ATMController {
         }
     }
 
+    private void checkPIN() {
+        Authenticator auth = new Authenticator();
+        AccountManager am = new AccountManager();
+        if (auth.validPin(pin, card)) {
+            account = am.getAccount(pin, card);
+            configure(5);
+        } else {
+            screen_row1.setText("INCORRECT PIN");
+        }
+    }
+
     private void activateNumpad() {
         button_num0.setOnAction(this::handleNumberButton);
         button_num1.setOnAction(this::handleNumberButton);
@@ -224,7 +253,10 @@ public class ATMController {
     }
 
     private void resetAllButtons() {
-        button_cardslot.setOnAction(null);
+        // DEFAULT VALUES FOR ACTION HANDLER MAPPING
+        // Set to non-null if it should be mapped for
+        // every screen (i.e. button always active)
+        button_cardslot.setOnAction(this::handleCardInsertion);
         button_printer.setOnAction(null);
         button_deposit.setOnAction(null);
         button_dispenser.setOnAction(null);
@@ -249,5 +281,17 @@ public class ATMController {
         button_num8.setOnAction(null);
         button_num9.setOnAction(null);
         button_num0.setOnAction(null);
+        setCardTextActive(false);
+        setDepositTextActive(false);
+    }
+
+    private void setCardTextActive(boolean active) {
+        input_card.setEditable(active);
+        input_card.setDisable(!active);
+    }
+
+    private void setDepositTextActive(boolean active) {
+        input_deposit.setEditable(active);
+        input_deposit.setDisable(!active);
     }
 }

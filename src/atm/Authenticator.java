@@ -1,9 +1,12 @@
 package atm;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
 
 import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Andrew Shubin on 11/3/16.
@@ -14,7 +17,7 @@ public class Authenticator {
 
     public Authenticator() {
         path = FileUtils.getUserDirectoryPath() + "/IdeaProjects/KProject" +
-                "/src/atm/cards.txt";
+                "/src/atm/accounts.txt";
     }
 
     public boolean validCard(String cardNum) {
@@ -22,12 +25,12 @@ public class Authenticator {
             return false;
         }
 
-        String[] lines = getCardsData();
+        List<Account> lines = getAccounts();
 
-        String[] pin_card;
-        for (String line : lines) {
-            pin_card = StringUtils.split(line, " ");
-            if (cardNum.equals(pin_card[1])) {
+        String cardCheck;
+        for (Account line : lines) {
+            cardCheck = line.getCard();
+            if (cardNum.equals(cardCheck)) {
                 return true;
             }
         }
@@ -35,17 +38,19 @@ public class Authenticator {
         return false;
     }
 
-    public boolean validPin(String pin, String cardNum) {
-        if (cardNum.length() != 4) {
+    public boolean validPin(String pin, String card) {
+        if (pin.length() != 4) {
             return false;
         }
 
-        String[] lines = getCardsData();
+        List<Account> lines = getAccounts();
 
-        String[] pin_card;
-        for (String line : lines) {
-            pin_card = StringUtils.split(line, " ");
-            if (cardNum.equals(pin_card[1]) && pin.equals(pin_card[0])) {
+        String pinCheck;
+        String cardCheck;
+        for (Account line : lines) {
+            pinCheck = line.getPin();
+            cardCheck = line.getCard();
+            if (card.equals(cardCheck) && pin.equals(pinCheck)) {
                 return true;
             }
         }
@@ -53,14 +58,25 @@ public class Authenticator {
         return false;
     }
 
-    private String[] getCardsData() {
+    private List<Account> getAccounts() {
+        List<Account> accounts = new ArrayList<>();
         File file = FileUtils.getFile(path);
         String raw = null;
+        String[] accountsStrings;
         try {
             raw = FileUtils.readFileToString(file, "UTF-8");
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return StringUtils.split(raw, "\n");
+        accountsStrings = StringUtils.split(raw, "\n");
+        ObjectMapper mapper = new ObjectMapper();
+        for (String accountString : accountsStrings) {
+            try {
+                accounts.add(mapper.readValue(accountString, Account.class));
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return accounts;
     }
 }
