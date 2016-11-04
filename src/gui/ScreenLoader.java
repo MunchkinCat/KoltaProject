@@ -14,6 +14,7 @@ public class ScreenLoader {
     private String path;
 
     public ScreenLoader() {
+
         path = FileUtils.getUserDirectoryPath() + "/IdeaProjects/KProject" +
                 "/src/gui/screens.txt";
     }
