@@ -2,6 +2,624 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04d2453e-b8ac-441c-b206-1d606dc58335" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/resources/background.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/commons-io-2.5-javadoc.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/commons-io-2.5.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/commons-lang3-3.5-javadoc.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/commons-lang3-3.5-sources.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/commons-lang3-3.5-test-sources.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/commons-lang3-3.5-tests.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/commons-lang3-3.5.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/resources/tab.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/resources/titlebar.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/resources/titlebar_end.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/concurrent/AbstractCircuitBreaker.State.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/concurrent/class-use/AbstractCircuitBreaker.State.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/concurrent/AbstractCircuitBreaker.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/concurrent/class-use/AbstractCircuitBreaker.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/filefilter/AbstractFileFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/filefilter/class-use/AbstractFileFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/filefilter/AgeFileFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/filefilter/class-use/AgeFileFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/text/translate/AggregateTranslator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/text/translate/class-use/AggregateTranslator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/filefilter/AndFileFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/filefilter/class-use/AndFileFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/AnnotationUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/class-use/AnnotationUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/output/AppendableOutputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/output/class-use/AppendableOutputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/ArrayUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/class-use/ArrayUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/concurrent/AtomicInitializer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/concurrent/class-use/AtomicInitializer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/concurrent/AtomicSafeInitializer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/concurrent/class-use/AtomicSafeInitializer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/AutoCloseInputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/class-use/AutoCloseInputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/BOMInputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/class-use/BOMInputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/concurrent/BackgroundInitializer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/concurrent/class-use/BackgroundInitializer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/concurrent/BasicThreadFactory.Builder.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/concurrent/class-use/BasicThreadFactory.Builder.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/concurrent/BasicThreadFactory.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/concurrent/class-use/BasicThreadFactory.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/BitField.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/class-use/BitField.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/BooleanUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/class-use/BooleanUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/BoundedInputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/class-use/BoundedInputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/BoundedReader.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/class-use/BoundedReader.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/BrokenInputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/class-use/BrokenInputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/output/BrokenOutputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/output/class-use/BrokenOutputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/builder/Builder.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/builder/class-use/Builder.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/output/ByteArrayOutputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/output/class-use/ByteArrayOutputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/ByteOrderMark.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/class-use/ByteOrderMark.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/CONTRIBUTING.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/concurrent/CallableBackgroundInitializer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/concurrent/class-use/CallableBackgroundInitializer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/filefilter/CanReadFileFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/filefilter/class-use/CanReadFileFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/filefilter/CanWriteFileFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/filefilter/class-use/CanWriteFileFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/CharEncoding.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/class-use/CharEncoding.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/CharSequenceInputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/class-use/CharSequenceInputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/CharSequenceReader.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/class-use/CharSequenceReader.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/text/translate/CharSequenceTranslator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/text/translate/class-use/CharSequenceTranslator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/CharSequenceUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/class-use/CharSequenceUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/CharSet.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/class-use/CharSet.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/CharSetUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/class-use/CharSetUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/CharUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/class-use/CharUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/Charsets.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/class-use/Charsets.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/output/ChunkedOutputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/output/class-use/ChunkedOutputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/output/ChunkedWriter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/output/class-use/ChunkedWriter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/concurrent/CircuitBreaker.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/concurrent/class-use/CircuitBreaker.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/concurrent/CircuitBreakingException.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/concurrent/class-use/CircuitBreakingException.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/ClassLoaderObjectInputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/class-use/ClassLoaderObjectInputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/serialization/ClassNameMatcher.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/serialization/class-use/ClassNameMatcher.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/ClassPathUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/class-use/ClassPathUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/ClassUtils.Interfaces.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/class-use/ClassUtils.Interfaces.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/ClassUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/class-use/ClassUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/exception/CloneFailedException.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/exception/class-use/CloneFailedException.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/CloseShieldInputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/class-use/CloseShieldInputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/output/CloseShieldOutputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/output/class-use/CloseShieldOutputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/ClosedInputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/class-use/ClosedInputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/output/ClosedOutputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/output/class-use/ClosedOutputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/text/translate/CodePointTranslator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/text/translate/class-use/CodePointTranslator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/builder/CompareToBuilder.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/builder/class-use/CompareToBuilder.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/comparator/CompositeFileComparator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/comparator/class-use/CompositeFileComparator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/text/CompositeFormat.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/text/class-use/CompositeFormat.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/concurrent/ConcurrentException.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/concurrent/class-use/ConcurrentException.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/concurrent/ConcurrentInitializer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/concurrent/class-use/ConcurrentInitializer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/concurrent/ConcurrentRuntimeException.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/concurrent/class-use/ConcurrentRuntimeException.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/concurrent/ConcurrentUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/concurrent/class-use/ConcurrentUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/filefilter/ConditionalFileFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/filefilter/class-use/ConditionalFileFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/concurrent/ConstantInitializer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/concurrent/class-use/ConstantInitializer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/reflect/ConstructorUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/reflect/class-use/ConstructorUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/exception/ContextedException.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/exception/class-use/ContextedException.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/exception/ContextedRuntimeException.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/exception/class-use/ContextedRuntimeException.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/Conversion.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/class-use/Conversion.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/CopyUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/class-use/CopyUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/CountingInputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/class-use/CountingInputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/output/CountingOutputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/output/class-use/CountingOutputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/time/DateFormatUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/time/class-use/DateFormatUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/time/DateParser.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/time/class-use/DateParser.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/time/DatePrinter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/time/class-use/DatePrinter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/time/DateUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/time/class-use/DateUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/exception/DefaultExceptionContext.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/exception/class-use/DefaultExceptionContext.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/comparator/DefaultFileComparator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/comparator/class-use/DefaultFileComparator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/output/DeferredFileOutputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/output/class-use/DeferredFileOutputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/filefilter/DelegateFileFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/filefilter/class-use/DelegateFileFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/DemuxInputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/class-use/DemuxInputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/output/DemuxOutputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/output/class-use/DemuxOutputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/builder/Diff.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/builder/class-use/Diff.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/builder/DiffBuilder.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/builder/class-use/DiffBuilder.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/builder/DiffResult.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/builder/class-use/DiffResult.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/builder/Diffable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/builder/class-use/Diffable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/comparator/DirectoryFileComparator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/comparator/class-use/DirectoryFileComparator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/filefilter/DirectoryFileFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/filefilter/class-use/DirectoryFileFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/DirectoryWalker.CancelException.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/class-use/DirectoryWalker.CancelException.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/DirectoryWalker.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/class-use/DirectoryWalker.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/time/DurationFormatUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/time/class-use/DurationFormatUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/filefilter/EmptyFileFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/filefilter/class-use/EmptyFileFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/EndianUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/class-use/EndianUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/text/translate/EntityArrays.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/text/translate/class-use/EntityArrays.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/EnumUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/class-use/EnumUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/builder/EqualsBuilder.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/builder/class-use/EqualsBuilder.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/builder/EqualsExclude.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/builder/class-use/EqualsExclude.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/concurrent/EventCountCircuitBreaker.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/concurrent/class-use/EventCountCircuitBreaker.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/event/EventListenerSupport.ProxyInvocationHandler.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/event/class-use/EventListenerSupport.ProxyInvocationHandler.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/event/EventListenerSupport.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/event/class-use/EventListenerSupport.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/event/EventUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/event/class-use/EventUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/exception/ExceptionContext.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/exception/class-use/ExceptionContext.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/exception/ExceptionUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/exception/class-use/ExceptionUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/text/ExtendedMessageFormat.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/text/class-use/ExtendedMessageFormat.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/comparator/ExtensionFileComparator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/comparator/class-use/ExtensionFileComparator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/filefilter/FalseFileFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/filefilter/class-use/FalseFileFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/time/FastDateFormat.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/time/class-use/FastDateFormat.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/time/FastDateParser.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/time/class-use/FastDateParser.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/time/FastDatePrinter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/time/class-use/FastDatePrinter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/reflect/FieldUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/reflect/class-use/FieldUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/monitor/FileAlterationListener.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/monitor/class-use/FileAlterationListener.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/monitor/FileAlterationListenerAdaptor.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/monitor/class-use/FileAlterationListenerAdaptor.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/monitor/FileAlterationMonitor.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/monitor/class-use/FileAlterationMonitor.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/monitor/FileAlterationObserver.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/monitor/class-use/FileAlterationObserver.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/FileCleaner.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/class-use/FileCleaner.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/FileCleaningTracker.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/class-use/FileCleaningTracker.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/FileDeleteStrategy.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/class-use/FileDeleteStrategy.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/monitor/FileEntry.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/monitor/class-use/FileEntry.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/FileExistsException.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/class-use/FileExistsException.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/filefilter/FileFileFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/filefilter/class-use/FileFileFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/filefilter/FileFilterUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/filefilter/class-use/FileFilterUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/FileSystemUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/class-use/FileSystemUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/FileUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/class-use/FileUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/output/FileWriterWithEncoding.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/output/class-use/FileWriterWithEncoding.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/FilenameUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/class-use/FilenameUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/text/FormatFactory.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/text/class-use/FormatFactory.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/text/FormattableUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/text/class-use/FormattableUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/math/Fraction.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/math/class-use/Fraction.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/builder/HashCodeBuilder.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/builder/class-use/HashCodeBuilder.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/builder/HashCodeExclude.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/builder/class-use/HashCodeExclude.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/HexDump.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/class-use/HexDump.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/filefilter/HiddenFileFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/filefilter/class-use/HiddenFileFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/math/IEEE754rUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/math/class-use/IEEE754rUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/IOCase.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/class-use/IOCase.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/IOExceptionWithCause.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/class-use/IOExceptionWithCause.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/filefilter/IOFileFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/filefilter/class-use/IOFileFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/IOUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/class-use/IOUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/tuple/ImmutablePair.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/tuple/class-use/ImmutablePair.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/tuple/ImmutableTriple.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/tuple/class-use/ImmutableTriple.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/reflect/InheritanceUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/reflect/class-use/InheritanceUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/text/translate/JavaUnicodeEscaper.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/text/translate/class-use/JavaUnicodeEscaper.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/JavaVersion.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/class-use/JavaVersion.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/comparator/LastModifiedFileComparator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/comparator/class-use/LastModifiedFileComparator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/concurrent/LazyInitializer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/concurrent/class-use/LazyInitializer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/LineIterator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/class-use/LineIterator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/LocaleUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/class-use/LocaleUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/output/LockableFileWriter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/output/class-use/LockableFileWriter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/text/translate/LookupTranslator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/text/translate/class-use/LookupTranslator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/filefilter/MagicNumberFileFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/filefilter/class-use/MagicNumberFileFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/reflect/MethodUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/reflect/class-use/MethodUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/concurrent/MultiBackgroundInitializer.MultiBackgroundInitializerResults.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/concurrent/class-use/MultiBackgroundInitializer.MultiBackgroundInitializerResults.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/concurrent/MultiBackgroundInitializer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/concurrent/class-use/MultiBackgroundInitializer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/builder/MultilineRecursiveToStringStyle.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/builder/class-use/MultilineRecursiveToStringStyle.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/mutable/Mutable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/mutable/class-use/Mutable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/mutable/MutableBoolean.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/mutable/class-use/MutableBoolean.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/mutable/MutableByte.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/mutable/class-use/MutableByte.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/mutable/MutableDouble.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/mutable/class-use/MutableDouble.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/mutable/MutableFloat.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/mutable/class-use/MutableFloat.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/mutable/MutableInt.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/mutable/class-use/MutableInt.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/mutable/MutableLong.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/mutable/class-use/MutableLong.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/mutable/MutableObject.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/mutable/class-use/MutableObject.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/tuple/MutablePair.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/tuple/class-use/MutablePair.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/mutable/MutableShort.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/mutable/class-use/MutableShort.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/tuple/MutableTriple.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/tuple/class-use/MutableTriple.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/NOTICE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/NOTICE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/comparator/NameFileComparator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/comparator/class-use/NameFileComparator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/filefilter/NameFileFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/filefilter/class-use/NameFileFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/filefilter/NotFileFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/filefilter/class-use/NotFileFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/NotImplementedException.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/class-use/NotImplementedException.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/NullInputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/class-use/NullInputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/output/NullOutputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/output/class-use/NullOutputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/NullReader.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/class-use/NullReader.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/output/NullWriter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/output/class-use/NullWriter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/math/NumberUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/math/class-use/NumberUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/text/translate/NumericEntityEscaper.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/text/translate/class-use/NumericEntityEscaper.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.OPTION.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/text/translate/class-use/NumericEntityUnescaper.OPTION.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/text/translate/class-use/NumericEntityUnescaper.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/ObjectUtils.Null.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/class-use/ObjectUtils.Null.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/ObjectUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/class-use/ObjectUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/text/translate/OctalUnescaper.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/text/translate/class-use/OctalUnescaper.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/filefilter/OrFileFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/filefilter/class-use/OrFileFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/tuple/Pair.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/tuple/class-use/Pair.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/comparator/PathFileComparator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/comparator/class-use/PathFileComparator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/filefilter/PrefixFileFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/filefilter/class-use/PrefixFileFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/ProxyInputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/class-use/ProxyInputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/output/ProxyOutputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/output/class-use/ProxyOutputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/ProxyReader.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/class-use/ProxyReader.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/output/ProxyWriter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/output/class-use/ProxyWriter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/RELEASE-NOTES.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/RELEASE-NOTES.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/RandomStringUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/class-use/RandomStringUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/RandomUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/class-use/RandomUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/Range.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/class-use/Range.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/ReaderInputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/class-use/ReaderInputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/builder/RecursiveToStringStyle.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/builder/class-use/RecursiveToStringStyle.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/builder/ReflectionToStringBuilder.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/builder/class-use/ReflectionToStringBuilder.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/filefilter/RegexFileFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/filefilter/class-use/RegexFileFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/ReversedLinesFileReader.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/class-use/ReversedLinesFileReader.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/SerializationException.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/class-use/SerializationException.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/SerializationUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/class-use/SerializationUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/comparator/SizeFileComparator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/comparator/class-use/SizeFileComparator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/filefilter/SizeFileFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/filefilter/class-use/SizeFileFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/builder/StandardToStringStyle.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/builder/class-use/StandardToStringStyle.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/time/StopWatch.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/time/class-use/StopWatch.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/text/StrBuilder.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/text/class-use/StrBuilder.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/text/StrLookup.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/text/class-use/StrLookup.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/text/StrMatcher.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/text/class-use/StrMatcher.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/text/StrSubstitutor.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/text/class-use/StrSubstitutor.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/text/StrTokenizer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/text/class-use/StrTokenizer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/output/StringBuilderWriter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/output/class-use/StringBuilderWriter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/StringEscapeUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/class-use/StringEscapeUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/StringUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/class-use/StringUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/filefilter/SuffixFileFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/filefilter/class-use/SuffixFileFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/SwappedDataInputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/class-use/SwappedDataInputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/SystemUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/class-use/SystemUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/TaggedIOException.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/class-use/TaggedIOException.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/TaggedInputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/class-use/TaggedInputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/output/TaggedOutputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/output/class-use/TaggedOutputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/Tailer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/class-use/Tailer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5-src/src/main/java/org/apache/commons/io/input/Tailer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/TailerListener.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/class-use/TailerListener.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/TailerListenerAdapter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/class-use/TailerListenerAdapter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/TeeInputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/class-use/TeeInputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/output/TeeOutputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/output/class-use/TeeOutputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/ThreadUtils.NamePredicate.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/class-use/ThreadUtils.NamePredicate.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/ThreadUtils.ThreadGroupPredicate.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/class-use/ThreadUtils.ThreadGroupPredicate.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/ThreadUtils.ThreadIdPredicate.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/class-use/ThreadUtils.ThreadIdPredicate.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/ThreadUtils.ThreadPredicate.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/class-use/ThreadUtils.ThreadPredicate.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/ThreadUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/class-use/ThreadUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/concurrent/ThresholdCircuitBreaker.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/concurrent/class-use/ThresholdCircuitBreaker.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/output/ThresholdingOutputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/output/class-use/ThresholdingOutputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/concurrent/TimedSemaphore.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/concurrent/class-use/TimedSemaphore.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/builder/ToStringBuilder.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/builder/class-use/ToStringBuilder.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/builder/ToStringExclude.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/builder/class-use/ToStringExclude.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/builder/ToStringStyle.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/builder/class-use/ToStringStyle.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/tuple/Triple.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/tuple/class-use/Triple.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/filefilter/TrueFileFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/filefilter/class-use/TrueFileFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/reflect/TypeLiteral.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/reflect/class-use/TypeLiteral.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/reflect/TypeUtils.WildcardTypeBuilder.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/reflect/class-use/TypeUtils.WildcardTypeBuilder.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/reflect/TypeUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/reflect/class-use/TypeUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/reflect/Typed.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/reflect/class-use/Typed.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/text/translate/UnicodeEscaper.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/text/translate/class-use/UnicodeEscaper.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/text/translate/UnicodeUnescaper.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/text/translate/class-use/UnicodeUnescaper.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/text/translate/UnicodeUnpairedSurrogateRemover.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/text/translate/class-use/UnicodeUnpairedSurrogateRemover.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/UnixLineEndingInputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/class-use/UnixLineEndingInputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/Validate.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/class-use/Validate.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/serialization/ValidatingObjectInputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/serialization/class-use/ValidatingObjectInputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/filefilter/WildcardFileFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/filefilter/class-use/WildcardFileFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/filefilter/WildcardFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/filefilter/class-use/WildcardFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/WindowsLineEndingInputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/class-use/WindowsLineEndingInputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/text/WordUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/text/class-use/WordUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/output/WriterOutputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/output/class-use/WriterOutputStream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/XmlStreamReader.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/class-use/XmlStreamReader.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/XmlStreamReaderException.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/class-use/XmlStreamReaderException.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/output/XmlStreamWriter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/output/class-use/XmlStreamWriter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/allclasses-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/allclasses-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/allclasses-noframe.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/allclasses-noframe.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/constant-values.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/constant-values.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/deprecated-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/deprecated-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/help-doc.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/help-doc.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/index-all.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/index-all.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/overview-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/overview-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/overview-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/overview-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/overview-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/overview-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/comparator/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/filefilter/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/monitor/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/output/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/serialization/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/builder/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/concurrent/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/event/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/exception/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/math/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/mutable/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/reflect/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/text/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/text/translate/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/time/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/tuple/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/package-list" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/package-list" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/comparator/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/filefilter/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/monitor/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/output/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/serialization/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/builder/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/concurrent/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/event/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/exception/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/math/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/mutable/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/reflect/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/text/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/text/translate/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/time/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/tuple/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/package-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/comparator/package-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/filefilter/package-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/package-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/monitor/package-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/output/package-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/serialization/package-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/package-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/builder/package-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/concurrent/package-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/event/package-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/exception/package-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/math/package-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/mutable/package-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/reflect/package-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/text/package-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/text/translate/package-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/time/package-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/tuple/package-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/package-use.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/comparator/package-use.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/filefilter/package-use.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/input/package-use.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/monitor/package-use.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/output/package-use.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/org/apache/commons/io/serialization/package-use.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/package-use.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/builder/package-use.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/concurrent/package-use.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/event/package-use.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/exception/package-use.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/math/package-use.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/mutable/package-use.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/reflect/package-use.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/text/package-use.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/text/translate/package-use.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/time/package-use.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/org/apache/commons/lang3/tuple/package-use.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/serialized-form.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/serialized-form.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-io-2.5/docs/stylesheet.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependencies/ApacheCommons/commons-lang3-3.5/apidocs/stylesheet.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/KProject/atm/Account.class" afterPath="$PROJECT_DIR$/out/production/KProject/atm/Account.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="KProject.iws" />
@@ -28,21 +646,19 @@
       <file leaf-file-name="ATMController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/gui/ATMController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6146682">
-              <caret line="253" column="58" selection-start-line="253" selection-start-column="58" selection-end-line="253" selection-end-column="58" />
+            <state vertical-scroll-proportion="0.31017613">
+              <caret line="154" column="33" selection-start-line="154" selection-start-column="33" selection-end-line="154" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Authenticator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/atm/Authenticator.java">
+      <file leaf-file-name="screens.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gui/screens.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="1" column="47" selection-start-line="1" selection-start-column="47" selection-end-line="1" selection-end-column="47" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -87,7 +703,6 @@
         <option value="$PROJECT_DIR$/src/atm/ReceiptPrinter.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/gui/screens.txt" />
-        <option value="$PROJECT_DIR$/src/atm/Account.java" />
         <option value="$PROJECT_DIR$/src/atm/accounts.txt" />
         <option value="$PROJECT_DIR$/src/GenerateAccounts.java" />
         <option value="$PROJECT_DIR$/src/atm/AccountUpdater.java" />
@@ -95,6 +710,7 @@
         <option value="$PROJECT_DIR$/src/gui/SimulatedATM.fxml" />
         <option value="$PROJECT_DIR$/src/atm/Authenticator.java" />
         <option value="$PROJECT_DIR$/src/gui/ATMController.java" />
+        <option value="$PROJECT_DIR$/src/atm/Account.java" />
       </list>
     </option>
   </component>
@@ -224,6 +840,9 @@
     <property name="last_opened_file_path" value="$USER_HOME$/ApacheCommons/commons-lang3-3.5-src" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dependencies" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/gui" />
       <recent name="$PROJECT_DIR$" />
@@ -422,13 +1041,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1143" y="23" width="1417" height="1413" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23921272" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329296" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -439,14 +1059,13 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.216" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32853898" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.216" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20514761" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32976446" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -490,7 +1109,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -526,6 +1145,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="13" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -543,6 +1163,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -569,6 +1193,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -586,6 +1211,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -617,6 +1246,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -629,6 +1262,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+          <folding>
+            <element signature="e#152#153#0" expanded="false" />
+            <element signature="e#190#191#0" expanded="false" />
+            <element signature="e#251#252#0" expanded="false" />
+            <element signature="e#290#291#0" expanded="false" />
+            <element signature="e#375#376#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -660,23 +1300,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/ScreenLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimulATM.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/atm/CardSlot.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -684,59 +1307,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/screens.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="47" selection-start-line="1" selection-start-column="47" selection-end-line="1" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/atm/Account.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="25" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/atm/ReceiptPrinter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GenerateAccounts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="56" selection-start-line="29" selection-start-column="56" selection-end-line="30" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/atm/AccountManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="50" column="30" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/SimulatedATM.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/atm/accounts.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.030674847">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -749,20 +1323,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/atm/Authenticator.java">
+    <entry file="file://$PROJECT_DIR$/src/atm/accounts.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+        <state vertical-scroll-proportion="0.034924332">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/ScreenLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12223516">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SimulATM.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19208382">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GenerateAccounts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5064028">
+          <caret line="29" column="56" selection-start-line="29" selection-start-column="56" selection-end-line="30" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/SimulatedATM.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2661448">
+          <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/atm/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/atm/Authenticator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.07338552">
+          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/atm/AccountManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23483366">
+          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/screens.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="47" selection-start-line="1" selection-start-column="47" selection-end-line="1" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/ATMController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6146682">
-          <caret line="253" column="58" selection-start-line="253" selection-start-column="58" selection-end-line="253" selection-end-column="58" />
+        <state vertical-scroll-proportion="0.31017613">
+          <caret line="154" column="33" selection-start-line="154" selection-start-column="33" selection-end-line="154" selection-end-column="33" />
           <folding />
         </state>
       </provider>
