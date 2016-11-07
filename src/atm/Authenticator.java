@@ -5,6 +5,7 @@ import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -68,7 +69,7 @@ public class Authenticator {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        accountsStrings = StringUtils.split(raw, "\n");
+        accountsStrings = StringUtils.split(raw, detectNewline());
         ObjectMapper mapper = new ObjectMapper();
         for (String accountString : accountsStrings) {
             try {
@@ -78,5 +79,25 @@ public class Authenticator {
             }
         }
         return accounts;
+    }
+
+    private String detectNewline() {
+        File file = FileUtils.getFile(path);
+        String raw = null;
+        try {
+            raw = FileUtils.readFileToString(file, "UTF-8");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        for (int i = 0; i < raw.length(); i++) {
+            if (raw.charAt(i) == '\n' && i != 0) {
+                if (raw.charAt(i - 1) == '\r') {
+                    return "\r\n";
+                } else {
+                    return "\n";
+                }
+            }
+        }
+        return "\n";
     }
 }

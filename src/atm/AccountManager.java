@@ -5,6 +5,7 @@ import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,7 +31,7 @@ public class AccountManager {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        accountsStrings = StringUtils.split(raw, "\n");
+        accountsStrings = StringUtils.split(raw, detectNewline());
         ObjectMapper mapper = new ObjectMapper();
         for (String accountString : accountsStrings) {
             try {
@@ -61,7 +62,7 @@ public class AccountManager {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        accountsStrings = StringUtils.split(raw, "\n");
+        accountsStrings = StringUtils.split(raw, detectNewline());
         ObjectMapper mapper = new ObjectMapper();
         for (String accountString : accountsStrings) {
             try {
@@ -81,13 +82,34 @@ public class AccountManager {
 
         accounts.remove(old);
         String newAccountsFile = "";
+        String newline = detectNewline();
         try {
             for (Account acc : accounts) {
-                newAccountsFile += mapper.writeValueAsString(acc) + "\n";
+                newAccountsFile += mapper.writeValueAsString(acc) + newline;
             }
             FileUtils.writeStringToFile(file, newAccountsFile, "UTF-8");
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    private String detectNewline() {
+        File file = FileUtils.getFile(path);
+        String raw = null;
+        try {
+            raw = FileUtils.readFileToString(file, "UTF-8");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        for (int i = 0; i < raw.length(); i++) {
+            if (raw.charAt(i) == '\n' && i != 0) {
+                if (raw.charAt(i - 1) == '\r') {
+                    return "\r\n";
+                } else {
+                    return "\n";
+                }
+            }
+        }
+        return "\n";
     }
 }
