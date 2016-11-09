@@ -3,6 +3,7 @@ package gui.controller;
 import atm.Account;
 import atm.AccountManager;
 import atm.Authenticator;
+import atm.ReceiptPrinter;
 import gui.ScreenLoader;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -15,10 +16,10 @@ import javafx.scene.control.TextField;
  */
 public class ATMController {
 
-    private final int LINE_ONE = 0;
-    private final int LINE_TWO = 1;
-    private final int LINE_THREE = 2;
-    private final int LINE_FOUR = 3;
+    protected final int LINE_ONE = 0;
+    protected final int LINE_TWO = 1;
+    protected final int LINE_THREE = 2;
+    protected final int LINE_FOUR = 3;
 
     private int sourceScreen = 1;
 
@@ -32,7 +33,7 @@ public class ATMController {
 
     @FXML
     private Label screen_row1, screen_row2,
-            screen_row3, screen_row4;
+            screen_row3, screen_row4, label_receipt;
 
     @FXML
     private Button button_cardslot, button_printer, button_deposit,
@@ -67,11 +68,20 @@ public class ATMController {
 
     @FXML
     protected void handleEnterButton(ActionEvent event) {
+        NumpadHandler numpad = new NumpadHandler(this, event);
         switch (sourceScreen) {
             case 1:
                 break;
             case 2:
-                checkPIN();
+                Account tempAccount = numpad.checkPin();
+                if (tempAccount != null) {
+                    account = tempAccount;
+                    configure(5);
+                } else {
+                    screen_row1.setText("INCORRECT PIN");
+                    pin = "";
+                    screen_row4.setText("____");
+                }
                 break;
             default:
                 break;
@@ -106,18 +116,57 @@ public class ATMController {
 
     @FXML
     protected void handleNumberButton(ActionEvent event) {
+        NumpadHandler numpad = new NumpadHandler(this, event);
         switch (sourceScreen) {
             case 1:
                 break;
             case 2:
+                String[] newPin = null;
                 try {
-                    updatePIN(event.getSource().toString());
+                    newPin = numpad.updatePin(event.getSource().toString());
                 } catch (Exception e) {
                     e.printStackTrace();
+                }
+                if (newPin != null) {
+                    screen_row4.setText(newPin[0]); // updated hash
+                    pin = newPin[1]; // updated pin number
+                } else {
+                    screen_row1.setText("MAX PIN LENGTH REACHED");
                 }
                 break;
             default:
                 break;
+        }
+    }
+
+    protected int getSourceScreen() {
+        return this.sourceScreen;
+    }
+
+    protected String getPin() {
+        return this.pin;
+    }
+
+    protected String getCard() {
+        return this.card;
+    }
+
+    protected Account getAccount() {
+        return this.account;
+    }
+
+    protected String getScreen(int line) {
+        switch (line) {
+            case 1:
+                return screen_row1.getText();
+            case 2:
+                return screen_row2.getText();
+            case 3:
+                return screen_row3.getText();
+            case 4:
+                return screen_row4.getText();
+            default:
+                return null;
         }
     }
 
