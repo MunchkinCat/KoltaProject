@@ -5,7 +5,7 @@ DO NOT EDIT! This file is to store screen text. The line num (starting from 0) c
 ,,Invalid ATM card.,Please remove card.
 Select transaction:,balance >,deposit >,withdrawal >
 ,Balance is,$ddd.dd,
-,Enter amount.,Withdrawals must,be multiples of $10
+Enter amount.,Withdrawals must,be multiples of $10,$0.00
 ,Insufficient Funds!,Please enter a new,amount
 ,,Machine can only,dispense $10 notes
 Temporarily unable to,process withdrawals.,Another transaction?,< YES / NO >

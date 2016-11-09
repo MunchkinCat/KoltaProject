@@ -1,4 +1,4 @@
-package gui;
+package gui.controller;
 
 import atm.Account;
 import atm.AccountManager;
@@ -181,64 +181,6 @@ public class ATMController {
         }
 
         sourceScreen = screenNum;
-    }
-
-    private void updatePIN(String source) throws Exception {
-        if (sourceScreen != 2) {
-            throw new Exception("Only for use with Screen 2");
-        }
-
-        int stringLength = source.length();
-
-        // stringLength - 2 because 1 for the 0-indexing, and another for
-        // a single quote at the end of the source string representation
-        // The returned character is the number which the key represents
-        int number = Character.getNumericValue(source.charAt(stringLength - 2));
-
-        String oldPIN = screen_row4.getText();
-        int blankCount = 0;
-        for (int i = 0; i < oldPIN.length(); i++) {
-            if (oldPIN.charAt(i) == '_') {
-                blankCount++;
-            }
-        }
-
-        if (blankCount > 4 || oldPIN.length() > 4) {
-            throw new Exception("ERROR: Screen line 4 contains more than 4 chars");
-        } else if (blankCount > 0) {
-            switch (blankCount - 1) { // -1 because of the new input
-                case 0:
-                    screen_row4.setText("****");
-                    break;
-                case 1:
-                    screen_row4.setText("_***");
-                    break;
-                case 2:
-                    screen_row4.setText("__**");
-                    break;
-                case 3:
-                    screen_row4.setText("___*");
-                    break;
-                default:
-                    break;
-            }
-            pin = number + pin;
-        } else {
-            screen_row1.setText("MAX PIN LENGTH REACHED");
-        }
-    }
-
-    private void checkPIN() {
-        Authenticator auth = new Authenticator();
-        AccountManager am = new AccountManager();
-        if (auth.validPin(pin, card)) {
-            account = am.getAccount(pin, card);
-            configure(5);
-        } else {
-            screen_row1.setText("INCORRECT PIN");
-            pin = "";
-            screen_row4.setText("____");
-        }
     }
 
     private void activateNumpad() {
