@@ -49,7 +49,7 @@ public class Account {
         return depositAmount;
     }
 
-    public double getWithdrawAmount() {
+    public double getTotalWithdrawAmount() {
         return withdrawAmount;
     }
 
@@ -61,22 +61,36 @@ public class Account {
         return card;
     }
 
-    public void withdraw(double amount) {
-        balance -= amount;
+    public boolean withdraw(double amount) {
         withdrawAmount += amount;
+        return isSufficientFunds();
     }
 
-    public void deposit(double amount) {
-        balance += amount;
+    public boolean deposit(double amount) {
         depositAmount += amount;
+        return isSufficientFunds();
     }
 
-    public void resetWithdrawDepositTracker() {
+    // Returns true if transaction was finalized successfully
+    public boolean finalizeTransaction() {
+        if (isSufficientFunds()) {
+            balance = balance - withdrawAmount + depositAmount;
+            resetWithdrawDepositTracker();
+            return true;
+        } else {
+            resetWithdrawDepositTracker();
+            return false;
+        }
+    }
+
+    // Checks if finalizing will leave a non-negative balance.
+    private boolean isSufficientFunds() {
+        double tentativeBalance = balance - withdrawAmount + depositAmount;
+        return tentativeBalance >= 0;
+    }
+
+    private void resetWithdrawDepositTracker() {
         withdrawAmount = 0;
         depositAmount = 0;
-    }
-
-    public boolean isSufficientFunds(double amount) {
-        return balance >= amount;
     }
 }

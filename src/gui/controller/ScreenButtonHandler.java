@@ -8,8 +8,10 @@ import javafx.event.ActionEvent;
 public class ScreenButtonHandler {
 
     private final ActionEvent EVENT;
+    private final ATMController controller;
 
     public ScreenButtonHandler(ATMController controller, ActionEvent event) {
         this.EVENT = event;
+        this.controller = controller;
     }
 }

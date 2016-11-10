@@ -1,6 +1,7 @@
 package gui.controller;
 
 import atm.Account;
+import atm.Amount;
 import atm.Authenticator;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -17,6 +18,7 @@ public class ATMController {
 
     private String pin = "";
     private String card = "";
+    private Amount withdrawal = new Amount();
 
     private Account account = null;
     private ScreenDAO screenDAO = null;
@@ -63,8 +65,6 @@ public class ATMController {
     protected void handleEnterButton(ActionEvent event) {
         NumpadHandler numpad = new NumpadHandler(this, event);
         switch (sourceScreen) {
-            case 1:
-                break;
             case 2:
                 Account tempAccount = numpad.checkPin();
                 if (tempAccount != null) {
@@ -76,6 +76,19 @@ public class ATMController {
                 break;
             case 3:
                 configure(2);
+                break;
+            case 6:
+                configure(5);
+                break;
+            case 7:
+                configure(numpad.checkWithdrawal());
+                break;
+            case 8:
+                configure(7);
+                break;
+            case 9:
+                configure(7);
+                break;
             default:
                 break;
         }
@@ -84,13 +97,26 @@ public class ATMController {
     @FXML
     protected void handleClearButton(ActionEvent event) {
         switch (sourceScreen) {
-            case 1:
-                break;
             case 2:
                 configure(2);
                 break;
             case 3:
                 configure(2);
+                break;
+            case 6:
+                configure(5);
+                break;
+            case 7:
+                configure(6);
+                break;
+            case 8:
+                configure(7);
+                break;
+            case 9:
+                configure(7);
+                break;
+            case 13:
+                configure(5);
                 break;
             default:
                 break;
@@ -108,6 +134,27 @@ public class ATMController {
             case 3:
                 configure(2);
                 break;
+            case 4:
+                configure(1);
+                break;
+            case 5:
+                configure(1);
+                break;
+            case 6:
+                configure(5);
+                break;
+            case 7:
+                configure(6);
+                break;
+            case 8:
+                configure(7);
+                break;
+            case 9:
+                configure(7);
+                break;
+            case 13:
+                configure(5);
+                break;
             default:
                 break;
         }
@@ -122,7 +169,7 @@ public class ATMController {
             case 2:
                 String[] newPin = null;
                 try {
-                    newPin = numpad.updatePin(event.getSource().toString());
+                    newPin = numpad.updatePin();
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -133,9 +180,39 @@ public class ATMController {
                     screen_row1.setText("MAX PIN LENGTH REACHED");
                 }
                 break;
+            case 7:
+                numpad.updateWithdrawal();
+                break;
             default:
                 break;
         }
+    }
+
+    @FXML
+    protected void handleDepositButton(ActionEvent event) {
+        if (sourceScreen == 13) {
+            Amount deposit = null;
+            try {
+                deposit = new Amount(input_deposit.getText());
+            } catch (NumberFormatException e) {
+                screen_row1.setText("ERROR: Enter a number.");
+                input_deposit.clear();
+            }
+            account.deposit(deposit.toDouble());
+            configure(14);
+        }
+    }
+
+    @FXML
+    protected void handleDispenserButton(ActionEvent event) {
+        if (sourceScreen == 11) {
+            configure(14);
+        }
+    }
+
+    @FXML
+    protected void handleReceiptButton(ActionEvent event) {
+        label_receipt.setText("");
     }
 
     protected int getSourceScreen() {
@@ -148,6 +225,10 @@ public class ATMController {
 
     protected String getCard() {
         return this.card;
+    }
+
+    protected String getWithdrawal() {
+        return this.withdrawal.toString();
     }
 
     protected Account getAccount() {
@@ -180,6 +261,8 @@ public class ATMController {
 
         resetAllButtons();
 
+        Amount balance = new Amount(account.getBalance());
+
         // Configures button actions according to screen.
         // Also deals with some other global vars.
         switch (screenNum) {
@@ -187,6 +270,9 @@ public class ATMController {
                 setCardTextActive(true);
                 input_card.clear();
                 pin = "";
+                card = "";
+                withdrawal.set(0);
+                account = null;
                 break;
             case 2: // PIN entry
                 button_clear.setOnAction(this::handleClearButton);
@@ -200,28 +286,65 @@ public class ATMController {
                 button_enter.setOnAction(this::handleEnterButton);
                 break;
             case 4: // Card error
+                // Nothing special to be done here.
+                // Card insertion/removal button is
+                // active by default.
                 break;
             case 5: // Transaction selection
+                button_cancel.setOnAction(this::handleCancelButton);
+                button_enter.setOnAction(this::handleEnterButton);    //Transaction selection
+                button_screen_right2.setOnAction(this::handleScreenButton);
+                button_screen_right3.setOnAction(this::handleScreenButton);
+                button_screen_right4.setOnAction(this::handleScreenButton);
                 break;
             case 6: // Balance display
+                button_cancel.setOnAction(this::handleCancelButton);
+                button_enter.setOnAction(this::handleEnterButton);
+                button_clear.setOnAction(this::handleClearButton);
+                screen_row3.setText(balance.toString());
                 break;
             case 7: // Withdrawal request amount entry
+                button_clear.setOnAction(this::handleClearButton);
+                button_enter.setOnAction(this::handleEnterButton);
+                button_cancel.setOnAction(this::handleCancelButton);
+                activateNumpad();
                 break;
             case 8: // Insufficient funds
+                button_clear.setOnAction(this::handleClearButton);
+                button_enter.setOnAction(this::handleEnterButton);
+                button_cancel.setOnAction(this::handleCancelButton);
                 break;
             case 9: // Dispenser denomination error
+                button_clear.setOnAction(this::handleClearButton);
+                button_enter.setOnAction(this::handleEnterButton);
+                button_cancel.setOnAction(this::handleCancelButton);
                 break;
             case 10: // Withdrawal processing error
+                button_clear.setOnAction(this::handleClearButton);
+                button_enter.setOnAction(this::handleEnterButton);
+                button_cancel.setOnAction(this::handleCancelButton);
                 break;
             case 11: // Cash dispensed
+                button_dispenser.setOnAction(this::handleDispenserButton);
                 break;
             case 12: // Deposit processing error
+                button_clear.setOnAction(this::handleClearButton);
+                button_enter.setOnAction(this::handleEnterButton);
+                button_cancel.setOnAction(this::handleCancelButton);
                 break;
             case 13: // Ready for deposit
+                button_deposit.setOnAction(this::handleDepositButton);
+                button_clear.setOnAction(this::handleClearButton);
+                button_cancel.setOnAction(this::handleCancelButton);
+                setDepositTextActive(true);
                 break;
             case 14: // Printed balance
+                button_screen_left4.setOnAction(this::handleScreenButton);
+                button_screen_right4.setOnAction(this::handleScreenButton);
+                screen_row2.setText(balance.toString());
                 break;
             case 15: // End of transaction
+                button_printer.setOnAction(this::handleReceiptButton);
                 break;
             default:
                 break;

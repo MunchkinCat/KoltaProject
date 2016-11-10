@@ -2,6 +2,7 @@ package gui.controller;
 
 import atm.Account;
 import atm.AccountDAO;
+import atm.Amount;
 import atm.Authenticator;
 import javafx.event.ActionEvent;
 
@@ -16,21 +17,26 @@ public class NumpadHandler {
 //    private final String LINE3;
     private final String LINE4;
     private final ActionEvent EVENT;
+    private final Account account;
 
     private String pin;
     private String card;
+    private Amount withdrawal;
 
     public NumpadHandler(ATMController controller, ActionEvent event) {
         this.SOURCE_SCREEN = controller.getSourceScreen();
         this.EVENT = event;
         this.pin = controller.getPin();
         this.card = controller.getCard();
+        this.withdrawal = new Amount(controller.getWithdrawal());
+        this.account = controller.getAccount();
 //        this.LINE1 = controller.getScreen(1);
 //        this.LINE2 = controller.getScreen(2);
 //        this.LINE3 = controller.getScreen(3);
         this.LINE4 = controller.getScreen(4);
     }
 
+    // Checks if the pin matches the account number.
     public Account checkPin() {
         Authenticator auth = new Authenticator();
         AccountDAO manager = new AccountDAO();
@@ -42,7 +48,8 @@ public class NumpadHandler {
     }
 
     // Returns [0] new hash and [1] new pin (NULL if max pin length reached)
-    public String[] updatePin(String sourceButton) throws Exception {
+    public String[] updatePin() throws Exception {
+        String sourceButton = EVENT.getSource().toString();
         String[] hash_pin = new String[2];
 
         if (SOURCE_SCREEN != 2) {
@@ -97,11 +104,39 @@ public class NumpadHandler {
         }
     }
 
-    public void checkDeposit() {
-
+    // Checks that the withdrawal string represents
+    // a valid withdrawal amount.
+    // Returns what screen to configure.
+    public int checkWithdrawal() {
+        Amount currentBalance = new Amount(account.getBalance());
+        if (withdrawal.toDouble() < currentBalance.toDouble()
+                && withdrawal.toDouble() % 10 == 0) {
+            account.withdraw(withdrawal.toDouble());
+            withdrawal.set(0);
+            return 6;
+        } else if (withdrawal.toDouble() > currentBalance.toDouble()) {
+            withdrawal.set(0);
+            return 8;
+        } else {
+            withdrawal.set(0);
+            return 7;
+        }
     }
 
-    public String updateDeposit() {
-        return null;
+    // Returns the updated withdrawal string.
+    public Amount updateWithdrawal() {
+        String sourceButton = EVENT.getSource().toString();
+        /* NOTE FOR NEXT SECTION OF CODE:
+         * stringLength - 2 used because of (1) the zero-indexing and
+         * (2) the single quote character that is at the end of the
+         * String representation of the source button passed in.
+         * The accessed character is the number which the key represents.
+         */
+        try {
+            withdrawal.insert(sourceButton.charAt(sourceButton.length() - 2));
+        } catch (NumberFormatException e) {
+            e.printStackTrace();
+        }
+        return withdrawal;
     }
 }
