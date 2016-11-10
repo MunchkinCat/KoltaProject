@@ -1,10 +1,7 @@
 package gui.controller;
 
 import atm.Account;
-import atm.AccountManager;
 import atm.Authenticator;
-import atm.ReceiptPrinter;
-import gui.ScreenLoader;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -16,17 +13,13 @@ import javafx.scene.control.TextField;
  */
 public class ATMController {
 
-    protected final int LINE_ONE = 0;
-    protected final int LINE_TWO = 1;
-    protected final int LINE_THREE = 2;
-    protected final int LINE_FOUR = 3;
-
     private int sourceScreen = 1;
 
     private String pin = "";
     private String card = "";
 
     private Account account = null;
+    private ScreenDAO screenDAO = null;
 
     @FXML
     private TextField input_deposit, input_card;
@@ -78,11 +71,11 @@ public class ATMController {
                     account = tempAccount;
                     configure(5);
                 } else {
-                    screen_row1.setText("INCORRECT PIN");
-                    pin = "";
-                    screen_row4.setText("____");
+                    configure(3);
                 }
                 break;
+            case 3:
+                configure(2);
             default:
                 break;
         }
@@ -94,6 +87,9 @@ public class ATMController {
             case 1:
                 break;
             case 2:
+                configure(2);
+                break;
+            case 3:
                 configure(2);
                 break;
             default:
@@ -108,6 +104,9 @@ public class ATMController {
                 break;
             case 2:
                 configure(1);
+                break;
+            case 3:
+                configure(2);
                 break;
             default:
                 break;
@@ -171,17 +170,13 @@ public class ATMController {
     }
 
     private void configure(int screenNum) {
-        ScreenLoader loader = new ScreenLoader();
-        String[] screen = null;
-        try {
-            screen = loader.getScreen(screenNum);
-        } catch (Exception e) {
-            e.printStackTrace();
+        if (screenDAO == null) {
+            screenDAO = new ScreenDAO();
         }
-        screen_row1.setText(screen[LINE_ONE]);
-        screen_row2.setText(screen[LINE_TWO]);
-        screen_row3.setText(screen[LINE_THREE]);
-        screen_row4.setText(screen[LINE_FOUR]);
+        screen_row1.setText(screenDAO.get(screenNum, 1));
+        screen_row2.setText(screenDAO.get(screenNum, 2));
+        screen_row3.setText(screenDAO.get(screenNum, 3));
+        screen_row4.setText(screenDAO.get(screenNum, 4));
 
         resetAllButtons();
 
@@ -200,6 +195,9 @@ public class ATMController {
                 activateNumpad();
                 break;
             case 3: // PIN error
+                button_clear.setOnAction(this::handleClearButton);
+                button_cancel.setOnAction(this::handleCancelButton);
+                button_enter.setOnAction(this::handleEnterButton);
                 break;
             case 4: // Card error
                 break;

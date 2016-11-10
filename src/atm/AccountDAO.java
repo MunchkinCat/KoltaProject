@@ -12,11 +12,11 @@ import java.util.List;
 /**
  * Created by Andrew Shubin on 11/4/16.
  */
-public class AccountManager {
+public class AccountDAO {
 
     private String path;
 
-    public AccountManager() {
+    public AccountDAO() {
         path = FileUtils.getUserDirectoryPath() + "/IdeaProjects/KoltaProject" +
                 "/src/atm/accounts.txt";
     }

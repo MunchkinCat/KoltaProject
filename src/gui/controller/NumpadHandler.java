@@ -1,7 +1,7 @@
 package gui.controller;
 
 import atm.Account;
-import atm.AccountManager;
+import atm.AccountDAO;
 import atm.Authenticator;
 import javafx.event.ActionEvent;
 
@@ -33,7 +33,7 @@ public class NumpadHandler {
 
     public Account checkPin() {
         Authenticator auth = new Authenticator();
-        AccountManager manager = new AccountManager();
+        AccountDAO manager = new AccountDAO();
         if (auth.validPin(pin, card)) {
             return manager.getAccount(pin, card);
         } else {
