@@ -12,25 +12,21 @@ public class Account {
     private String lastName;
     private String pin;
     private String card;
+    private boolean locked;
 
     public Account() {
-        balance = 0;
-        withdrawalAmount = 0;
-        depositAmount = 0;
-        firstName = "";
-        lastName = "";
-        pin = "";
-        card = "";
+        this("", "", "", "");
     }
 
     public Account(String firstName, String lastName, String pin, String card) {
-        withdrawalAmount = 0;
-        depositAmount = 0;
+        this.withdrawalAmount = 0;
+        this.depositAmount = 0;
         this.firstName = firstName;
         this.lastName = lastName;
         this.pin = pin;
         this.card = card;
         this.balance = 0;
+        this.locked = false;
     }
 
     public double getBalance() {
@@ -54,11 +50,23 @@ public class Account {
     }
 
     public String getPin() {
-        return pin;
+        if (!locked) {
+            return pin;
+        } else {
+            return null;
+        }
     }
 
     public String getCard() {
-        return card;
+        if (!locked) {
+            return card;
+        } else {
+            return null;
+        }
+    }
+
+    public void setLocked() {
+        this.locked = true;
     }
 
     public double tentative() {

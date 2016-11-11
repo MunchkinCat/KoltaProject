@@ -1,2 +1,2 @@
 {"balance":0.0,"withdrawalAmount":0.0,"depositAmount":0.0,"firstName":"Jane","lastName":"Smith","pin":"0000","card":"0000000000000000000"}
-{"balance":480.0,"withdrawalAmount":0.0,"depositAmount":0.0,"firstName":"Pete","lastName":"Smith","pin":"1111","card":"1111111111111111111"}
+{"balance":100000.0,"withdrawalAmount":0.0,"depositAmount":0.0,"firstName":"Pete","lastName":"Smith","pin":"1111","card":"1111111111111111111"}

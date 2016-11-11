@@ -1,9 +1,6 @@
 package gui.controller;
 
-import atm.Account;
-import atm.AccountDAO;
-import atm.Amount;
-import atm.Authenticator;
+import atm.*;
 import javafx.event.ActionEvent;
 
 /**
@@ -23,6 +20,8 @@ public class NumpadHandler {
     private String card;
     private Amount withdrawal;
 
+    private CashDispenser atm;
+
     public NumpadHandler(ATMController controller, ActionEvent event) {
         this.SOURCE_SCREEN = controller.getSourceScreen();
         this.EVENT = event;
@@ -30,6 +29,7 @@ public class NumpadHandler {
         this.card = controller.getCard();
         this.withdrawal = new Amount(controller.getWithdrawal());
         this.account = controller.getAccount();
+        this.atm = controller.getAtm();
 //        this.LINE1 = controller.getScreen(1);
 //        this.LINE2 = controller.getScreen(2);
 //        this.LINE3 = controller.getScreen(3);
@@ -107,12 +107,20 @@ public class NumpadHandler {
     // Checks that the withdrawal string represents
     // a valid withdrawal amount.
     // Returns what screen to configure.
-    public int checkWithdrawal() {
+    // Throws Exception if ATM does not have enough cash for withdrawal.
+    public int checkWithdrawal() throws Exception {
         Amount currentBalance = new Amount(account.tentative());
         if (withdrawal.toDouble() <= currentBalance.toDouble()
                 && withdrawal.toDouble() % 10 == 0) {
-            account.withdraw(withdrawal.toDouble());
-            withdrawal.set(0);
+            try {
+                atm.removeCash(withdrawal.toDouble());
+                account.withdraw(withdrawal.toDouble());
+                ReceiptPrinter.printReceipt(account);
+            } catch (Exception e) {
+                throw e;
+            } finally {
+                withdrawal.set(0);
+            }
             return 11;
         } else if (withdrawal.toDouble() > currentBalance.toDouble()) {
             withdrawal.set(0);

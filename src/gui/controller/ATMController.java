@@ -12,11 +12,16 @@ import javafx.scene.control.TextField;
  */
 public class ATMController {
 
+    private static final String LOCK_MESSAGE = "ACCOUNT LOCKED";
+
     private int sourceScreen = 1;
 
     private String pin = "";
+    private int pinFailCount = 0;
     private String card = "";
     private Amount withdrawal = new Amount();
+
+    private CashDispenser atm = new CashDispenser(10000);
 
     private Account account = null;
     private ScreenDAO screenDAO = null;
@@ -69,17 +74,32 @@ public class ATMController {
                     account = tempAccount;
                     configure(5);
                 } else {
+                    pinFailCount++;
                     configure(3);
+                    screen_row2.setText("Attempt(s) left: " + (3 - pinFailCount));
+                    if (pinFailCount >= 3) {
+                        AccountDAO accountDAO = new AccountDAO();
+                        accountDAO.lock(input_card.getText());
+                        screen_row4.setText(LOCK_MESSAGE);
+                    }
                 }
                 break;
             case 3:
-                configure(2);
+                if (screen_row4.getText() == LOCK_MESSAGE) {
+                    configure(1);
+                } else {
+                    configure(2);
+                }
                 break;
             case 6:
                 configure(5);
                 break;
             case 7:
-                configure(numpad.checkWithdrawal());
+                try {
+                    configure(numpad.checkWithdrawal());
+                } catch (Exception e) {
+                    configure(10);
+                }
                 break;
             case 8:
                 configure(7);
@@ -99,7 +119,11 @@ public class ATMController {
                 configure(2);
                 break;
             case 3:
-                configure(2);
+                if (screen_row4.getText() == LOCK_MESSAGE) {
+                    configure(1);
+                } else {
+                    configure(2);
+                }
                 break;
             case 6:
                 configure(5);
@@ -130,7 +154,11 @@ public class ATMController {
                 configure(1);
                 break;
             case 3:
-                configure(2);
+                if (screen_row4.getText() == LOCK_MESSAGE) {
+                    configure(1);
+                } else {
+                    configure(2);
+                }
                 break;
             case 4:
                 configure(1);
@@ -315,6 +343,10 @@ public class ATMController {
         }
     }
 
+    protected CashDispenser getAtm() {
+        return this.atm;
+    }
+
     private void configure(int screenNum) {
         if (screenDAO == null) {
             screenDAO = new ScreenDAO();
@@ -341,6 +373,7 @@ public class ATMController {
                 card = "";
                 withdrawal.set(0);
                 account = null;
+                pinFailCount = 0;
                 break;
             case 2: // PIN entry
                 pin = "";

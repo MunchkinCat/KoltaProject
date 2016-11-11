@@ -43,7 +43,8 @@ public class AccountDAO {
 
         Account desiredAccount = null;
         for (Account testAccount : accounts) {
-            if (testAccount.getCard().equals(card)
+            if (testAccount.getCard() != null
+                    && testAccount.getCard().equals(card)
                     && testAccount.getPin().equals(pin)) {
                 desiredAccount = testAccount;
             }
@@ -74,7 +75,8 @@ public class AccountDAO {
 
         Account old = null;
         for (Account testAccount : accounts) {
-            if (testAccount.getCard().equals(account.getCard())
+            if (testAccount.getCard() != null
+                    && testAccount.getCard().equals(account.getCard())
                     && testAccount.getPin().equals(account.getPin())) {
                 old = testAccount;
             }
@@ -82,6 +84,45 @@ public class AccountDAO {
 
         accounts.remove(old);
         accounts.add(account);
+        String newAccountsFile = "";
+        String newline = detectNewline();
+        try {
+            for (Account acc : accounts) {
+                newAccountsFile += mapper.writeValueAsString(acc) + newline;
+            }
+            FileUtils.writeStringToFile(file, newAccountsFile, "UTF-8");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void lock(String card) {
+        List<Account> accounts = new ArrayList<>();
+        File file = FileUtils.getFile(path);
+        String raw = null;
+        String[] accountsStrings;
+        try {
+            raw = FileUtils.readFileToString(file, "UTF-8");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        accountsStrings = StringUtils.split(raw, detectNewline());
+        ObjectMapper mapper = new ObjectMapper();
+        for (String accountString : accountsStrings) {
+            try {
+                accounts.add(mapper.readValue(accountString, Account.class));
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+
+        for (Account testAccount : accounts) {
+            if (testAccount.getCard() != null
+                    && testAccount.getCard().equals(card)) {
+                testAccount.setLocked();
+            }
+        }
+
         String newAccountsFile = "";
         String newline = detectNewline();
         try {

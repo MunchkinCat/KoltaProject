@@ -31,7 +31,7 @@ public class Authenticator {
         String cardCheck;
         for (Account line : lines) {
             cardCheck = line.getCard();
-            if (cardNum.equals(cardCheck)) {
+            if (cardCheck != null && cardNum.equals(cardCheck)) {
                 return true;
             }
         }
@@ -51,7 +51,8 @@ public class Authenticator {
         for (Account line : lines) {
             pinCheck = line.getPin();
             cardCheck = line.getCard();
-            if (card.equals(cardCheck) && pin.equals(pinCheck)) {
+            if (pinCheck != null && cardCheck != null
+                    && card.equals(cardCheck) && pin.equals(pinCheck)) {
                 return true;
             }
         }
