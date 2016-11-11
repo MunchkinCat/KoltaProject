@@ -1,8 +1,6 @@
 package gui.controller;
 
-import atm.Account;
-import atm.Amount;
-import atm.Authenticator;
+import atm.*;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -107,7 +105,7 @@ public class ATMController {
                 configure(5);
                 break;
             case 7:
-                configure(6);
+                configure(7);
                 break;
             case 8:
                 configure(7);
@@ -137,14 +135,11 @@ public class ATMController {
             case 4:
                 configure(1);
                 break;
-            case 5:
-                configure(1);
-                break;
             case 6:
                 configure(5);
                 break;
             case 7:
-                configure(6);
+                configure(5);
                 break;
             case 8:
                 configure(7);
@@ -181,7 +176,8 @@ public class ATMController {
                 }
                 break;
             case 7:
-                numpad.updateWithdrawal();
+                withdrawal = numpad.updateWithdrawal();
+                screen_row4.setText(withdrawal.toString());
                 break;
             default:
                 break;
@@ -194,12 +190,12 @@ public class ATMController {
             Amount deposit = null;
             try {
                 deposit = new Amount(input_deposit.getText());
+                account.deposit(deposit.toDouble());
+                configure(14);
             } catch (NumberFormatException e) {
                 screen_row1.setText("ERROR: Enter a number.");
                 input_deposit.clear();
             }
-            account.deposit(deposit.toDouble());
-            configure(14);
         }
     }
 
@@ -211,8 +207,77 @@ public class ATMController {
     }
 
     @FXML
+    protected void handleScreenButton(ActionEvent event) {
+        ScreenButtonHandler handler = new ScreenButtonHandler(this, event);
+        ScreenOption pressed = null;
+        Amount processed = null;
+        switch (sourceScreen) {
+            case 5: // right 2, 3, and 4 for transaction-selection
+                pressed = handler.selectTransaction();
+                switch (pressed) {
+                    case BALANCE:
+                        configure(6);
+                        break;
+                    case DEPOSIT:
+                        configure(13);
+                        break;
+                    case WITHDRAWAL:
+                        configure(7);
+                        break;
+                    default:
+                        break;
+                }
+                break;
+            case 10: // left and right 4
+            case 12: // for "Another Transaction?"
+            case 14: // "<< YES  ||  NO >>"
+                pressed = handler.newTransaction();
+                switch (pressed) {
+                    case YES:
+                        configure(5);
+                        break;
+                    case NO:
+                        configure(15);
+                        break;
+                    default:
+                        break;
+                }
+                break;
+            default:
+                break;
+        }
+    }
+
+    @FXML
     protected void handleReceiptButton(ActionEvent event) {
         label_receipt.setText("");
+    }
+
+    protected boolean isScreenButton(Button button, Side side, int line) {
+        if(side == Side.LEFT) {
+            switch (line) {
+                case 1:
+                    return button == button_screen_left1;
+                case 2:
+                    return button == button_screen_left2;
+                case 3:
+                    return button == button_screen_left3;
+                case 4:
+                    return button == button_screen_left4;
+            }
+        } else if (side == Side.RIGHT) {
+            switch (line) {
+                case 1:
+                    return button == button_screen_right1;
+                case 2:
+                    return button == button_screen_right2;
+                case 3:
+                    return button == button_screen_right3;
+                case 4:
+                    return button == button_screen_right4;
+            }
+        }
+        return false;
     }
 
     protected int getSourceScreen() {
@@ -227,8 +292,8 @@ public class ATMController {
         return this.card;
     }
 
-    protected String getWithdrawal() {
-        return this.withdrawal.toString();
+    protected double getWithdrawal() {
+        return this.withdrawal.toDouble();
     }
 
     protected Account getAccount() {
@@ -261,7 +326,10 @@ public class ATMController {
 
         resetAllButtons();
 
-        Amount balance = new Amount(account.getBalance());
+        Amount balance = null;
+        if (screenNum >= 5) {
+            balance = new Amount(account.tentative());
+        }
 
         // Configures button actions according to screen.
         // Also deals with some other global vars.
@@ -275,6 +343,7 @@ public class ATMController {
                 account = null;
                 break;
             case 2: // PIN entry
+                pin = "";
                 button_clear.setOnAction(this::handleClearButton);
                 button_cancel.setOnAction(this::handleCancelButton);
                 button_enter.setOnAction(this::handleEnterButton);
@@ -291,8 +360,6 @@ public class ATMController {
                 // active by default.
                 break;
             case 5: // Transaction selection
-                button_cancel.setOnAction(this::handleCancelButton);
-                button_enter.setOnAction(this::handleEnterButton);    //Transaction selection
                 button_screen_right2.setOnAction(this::handleScreenButton);
                 button_screen_right3.setOnAction(this::handleScreenButton);
                 button_screen_right4.setOnAction(this::handleScreenButton);
@@ -304,6 +371,7 @@ public class ATMController {
                 screen_row3.setText(balance.toString());
                 break;
             case 7: // Withdrawal request amount entry
+                withdrawal.set(0);
                 button_clear.setOnAction(this::handleClearButton);
                 button_enter.setOnAction(this::handleEnterButton);
                 button_cancel.setOnAction(this::handleCancelButton);
@@ -320,17 +388,15 @@ public class ATMController {
                 button_cancel.setOnAction(this::handleCancelButton);
                 break;
             case 10: // Withdrawal processing error
-                button_clear.setOnAction(this::handleClearButton);
-                button_enter.setOnAction(this::handleEnterButton);
-                button_cancel.setOnAction(this::handleCancelButton);
+                button_screen_left4.setOnAction(this::handleScreenButton);
+                button_screen_right4.setOnAction(this::handleScreenButton);
                 break;
             case 11: // Cash dispensed
                 button_dispenser.setOnAction(this::handleDispenserButton);
                 break;
             case 12: // Deposit processing error
-                button_clear.setOnAction(this::handleClearButton);
-                button_enter.setOnAction(this::handleEnterButton);
-                button_cancel.setOnAction(this::handleCancelButton);
+                button_screen_left4.setOnAction(this::handleScreenButton);
+                button_screen_right4.setOnAction(this::handleScreenButton);
                 break;
             case 13: // Ready for deposit
                 button_deposit.setOnAction(this::handleDepositButton);
@@ -344,7 +410,7 @@ public class ATMController {
                 screen_row2.setText(balance.toString());
                 break;
             case 15: // End of transaction
-                button_printer.setOnAction(this::handleReceiptButton);
+                label_receipt.setText(ReceiptPrinter.printReceipt(account));
                 break;
             default:
                 break;
@@ -371,7 +437,7 @@ public class ATMController {
         // Set to non-null if it should be mapped for
         // every screen (i.e. button always active)
         button_cardslot.setOnAction(this::handleCardInsertion);
-        button_printer.setOnAction(null);
+        button_printer.setOnAction(this::handleReceiptButton);
         button_deposit.setOnAction(null);
         button_dispenser.setOnAction(null);
         button_enter.setOnAction(null);

@@ -81,6 +81,7 @@ public class AccountDAO {
         }
 
         accounts.remove(old);
+        accounts.add(account);
         String newAccountsFile = "";
         String newline = detectNewline();
         try {

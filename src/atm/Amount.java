@@ -27,7 +27,7 @@ public class Amount {
         String newAmount = "";
         for (char c : raw.toCharArray()) {
             if (c == '.') {
-                newAmount += newInt + c;
+                newAmount += newInt + "" + c + "";
             } else {
                 newAmount += c;
             }

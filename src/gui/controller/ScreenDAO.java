@@ -102,6 +102,6 @@ public class ScreenDAO {
     }
 
     public String get(int screen, int line) {
-        return screens[screen][line - 1]; // because of 0-indexing
+        return screens[screen - 1][line - 1]; // -1 because of 0-indexing
     }
 }

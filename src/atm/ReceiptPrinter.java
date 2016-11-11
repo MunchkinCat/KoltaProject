@@ -13,9 +13,10 @@ public class ReceiptPrinter {
         String receipt = "THANK YOU\n"
                 + account.getLastName() + ", " + account.getFirstName()
                 + "\n------------------\n"
-                + "Withdrawn: " + account.getTotalWithdrawAmount() + "\n"
+                + "Withdrawn: " + account.getWithdrawalAmount() + "\n"
                 + "Deposited: " + account.getDepositAmount() + "\n"
-                + "Balance: " + account.getBalance();
+                + "Balance: " + account.tentative();
+        account.finalizeTransaction();
         return receipt;
     }
 }

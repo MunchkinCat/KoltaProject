@@ -28,7 +28,7 @@ public class GenerateAccounts {
         try {
             json = mapper.writeValueAsString(a) + "\n";
             json += mapper.writeValueAsString(b) + "\n";
-            FileUtils.writeStringToFile(file, json, "UTF-8", true);
+            FileUtils.writeStringToFile(file, json, "UTF-8", false);
         } catch (Exception e) {
             e.printStackTrace();
         }

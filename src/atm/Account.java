@@ -6,7 +6,7 @@ package atm;
 public class Account {
 
     private double balance;
-    private double withdrawAmount;
+    private double withdrawalAmount;
     private double depositAmount;
     private String firstName;
     private String lastName;
@@ -15,7 +15,7 @@ public class Account {
 
     public Account() {
         balance = 0;
-        withdrawAmount = 0;
+        withdrawalAmount = 0;
         depositAmount = 0;
         firstName = "";
         lastName = "";
@@ -24,7 +24,7 @@ public class Account {
     }
 
     public Account(String firstName, String lastName, String pin, String card) {
-        withdrawAmount = 0;
+        withdrawalAmount = 0;
         depositAmount = 0;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -49,8 +49,8 @@ public class Account {
         return depositAmount;
     }
 
-    public double getTotalWithdrawAmount() {
-        return withdrawAmount;
+    public double getWithdrawalAmount() {
+        return withdrawalAmount;
     }
 
     public String getPin() {
@@ -61,8 +61,12 @@ public class Account {
         return card;
     }
 
+    public double tentative() {
+        return balance - withdrawalAmount + depositAmount;
+    }
+
     public boolean withdraw(double amount) {
-        withdrawAmount += amount;
+        withdrawalAmount += amount;
         return isSufficientFunds();
     }
 
@@ -74,8 +78,10 @@ public class Account {
     // Returns true if transaction was finalized successfully
     public boolean finalizeTransaction() {
         if (isSufficientFunds()) {
-            balance = balance - withdrawAmount + depositAmount;
+            balance = balance - withdrawalAmount + depositAmount;
             resetWithdrawDepositTracker();
+            AccountDAO accountDAO = new AccountDAO();
+            accountDAO.update(this);
             return true;
         } else {
             resetWithdrawDepositTracker();
@@ -85,12 +91,12 @@ public class Account {
 
     // Checks if finalizing will leave a non-negative balance.
     private boolean isSufficientFunds() {
-        double tentativeBalance = balance - withdrawAmount + depositAmount;
+        double tentativeBalance = balance - withdrawalAmount + depositAmount;
         return tentativeBalance >= 0;
     }
 
     private void resetWithdrawDepositTracker() {
-        withdrawAmount = 0;
+        withdrawalAmount = 0;
         depositAmount = 0;
     }
 }

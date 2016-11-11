@@ -108,18 +108,18 @@ public class NumpadHandler {
     // a valid withdrawal amount.
     // Returns what screen to configure.
     public int checkWithdrawal() {
-        Amount currentBalance = new Amount(account.getBalance());
-        if (withdrawal.toDouble() < currentBalance.toDouble()
+        Amount currentBalance = new Amount(account.tentative());
+        if (withdrawal.toDouble() <= currentBalance.toDouble()
                 && withdrawal.toDouble() % 10 == 0) {
             account.withdraw(withdrawal.toDouble());
             withdrawal.set(0);
-            return 6;
+            return 11;
         } else if (withdrawal.toDouble() > currentBalance.toDouble()) {
             withdrawal.set(0);
             return 8;
         } else {
             withdrawal.set(0);
-            return 7;
+            return 9;
         }
     }
 
