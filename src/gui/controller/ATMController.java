@@ -6,6 +6,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import org.apache.commons.lang3.RandomUtils;
 
 /**
  * Created by egrstudent on 11/2/16.
@@ -19,7 +20,9 @@ public class ATMController {
     private String pin = "";
     private int pinFailCount = 0;
     private String card = "";
-    private Amount withdrawal = new Amount();
+    private Amount transactionAmount = new Amount();
+
+    private boolean deposit = false;
 
     private CashDispenser atm = new CashDispenser(10000);
 
@@ -95,14 +98,24 @@ public class ATMController {
                 configure(5);
                 break;
             case 7:
-                try {
-                    configure(numpad.checkWithdrawal());
-                } catch (Exception e) {
-                    configure(10);
+                if (!deposit) {
+                    try {
+                        configure(numpad.checkWithdrawal());
+                    } catch (Exception e) {
+                        configure(8);
+                        screen_row1.setText("CASH DISPENSER ERROR:");
+                    }
+                } else {
+                    account.deposit(transactionAmount.toDouble());
+                    configure(14);
                 }
                 break;
             case 8:
-                configure(7);
+                if (!deposit) {
+                    configure(7);
+                } else {
+                    configure(13);
+                }
                 break;
             case 9:
                 configure(7);
@@ -132,7 +145,11 @@ public class ATMController {
                 configure(7);
                 break;
             case 8:
-                configure(7);
+                if (!deposit) {
+                    configure(7);
+                } else {
+                    configure(13);
+                }
                 break;
             case 9:
                 configure(7);
@@ -170,10 +187,10 @@ public class ATMController {
                 configure(5);
                 break;
             case 8:
-                configure(7);
+                configure(5);
                 break;
             case 9:
-                configure(7);
+                configure(5);
                 break;
             case 13:
                 configure(5);
@@ -204,8 +221,12 @@ public class ATMController {
                 }
                 break;
             case 7:
-                withdrawal = numpad.updateWithdrawal();
-                screen_row4.setText(withdrawal.toString());
+                if (!deposit) {    // i.e. this is a withdrawal
+                    transactionAmount = numpad.updateWithdrawal();
+                } else {           // i.e. this is a deposit
+                    transactionAmount = numpad.updateDeposit();
+                }
+                screen_row4.setText(transactionAmount.toString());
                 break;
             default:
                 break;
@@ -215,11 +236,13 @@ public class ATMController {
     @FXML
     protected void handleDepositButton(ActionEvent event) {
         if (sourceScreen == 13) {
-            Amount deposit = null;
             try {
-                deposit = new Amount(input_deposit.getText());
-                account.deposit(deposit.toDouble());
-                configure(14);
+                transactionAmount = new Amount(input_deposit.getText());
+                if (transactionAmount.toDouble() < 0) {
+                    screen_row1.setText("ERROR: Enter a positive amount.");
+                } else {
+                    configure(7);
+                }
             } catch (NumberFormatException e) {
                 screen_row1.setText("ERROR: Enter a number.");
                 input_deposit.clear();
@@ -237,8 +260,8 @@ public class ATMController {
     @FXML
     protected void handleScreenButton(ActionEvent event) {
         ScreenButtonHandler handler = new ScreenButtonHandler(this, event);
-        ScreenOption pressed = null;
-        Amount processed = null;
+        ScreenOption pressed;
+        boolean error = (RandomUtils.nextInt(0, 5) == 0); // 1 in 5 chance of an error
         switch (sourceScreen) {
             case 5: // right 2, 3, and 4 for transaction-selection
                 pressed = handler.selectTransaction();
@@ -247,10 +270,18 @@ public class ATMController {
                         configure(6);
                         break;
                     case DEPOSIT:
-                        configure(13);
+                        if (!error) {
+                            configure(13);
+                        } else {
+                            configure(12);
+                        }
                         break;
                     case WITHDRAWAL:
-                        configure(7);
+                        if (!error) {
+                            configure(7);
+                        } else {
+                            configure(10);
+                        }
                         break;
                     default:
                         break;
@@ -320,8 +351,8 @@ public class ATMController {
         return this.card;
     }
 
-    protected double getWithdrawal() {
-        return this.withdrawal.toDouble();
+    protected double getTransactionAmount() {
+        return this.transactionAmount.toDouble();
     }
 
     protected Account getAccount() {
@@ -358,6 +389,7 @@ public class ATMController {
 
         resetAllButtons();
 
+
         Amount balance = null;
         if (screenNum >= 5) {
             balance = new Amount(account.tentative());
@@ -373,7 +405,7 @@ public class ATMController {
                 input_card.clear();
                 pin = "";
                 card = "";
-                withdrawal.set(0);
+                transactionAmount.set(0);
                 account = null;
                 pinFailCount = 0;
                 break;
@@ -393,6 +425,7 @@ public class ATMController {
                 button_cardslot.setOnAction(this::handleCardInsertion);
                 break;
             case 5: // Transaction selection
+                deposit = false;
                 button_screen_right2.setOnAction(this::handleScreenButton);
                 button_screen_right3.setOnAction(this::handleScreenButton);
                 button_screen_right4.setOnAction(this::handleScreenButton);
@@ -403,11 +436,17 @@ public class ATMController {
                 button_clear.setOnAction(this::handleClearButton);
                 screen_row3.setText(balance.toString());
                 break;
-            case 7: // Withdrawal request amount entry
-                withdrawal.set(0);
+            case 7: // Request amount entry
+                if (!deposit) {
+                    transactionAmount.set(0);
+                }
                 button_clear.setOnAction(this::handleClearButton);
                 button_enter.setOnAction(this::handleEnterButton);
                 button_cancel.setOnAction(this::handleCancelButton);
+                if (deposit) {
+                    screen_row2.setText("(Amount detected in");
+                    screen_row3.setText("slot is " + transactionAmount.toString() + ")");
+                }
                 activateNumpad();
                 break;
             case 8: // Insufficient funds
@@ -432,6 +471,8 @@ public class ATMController {
                 button_screen_right4.setOnAction(this::handleScreenButton);
                 break;
             case 13: // Ready for deposit
+                deposit = true;
+                transactionAmount.set(0);
                 button_deposit.setOnAction(this::handleDepositButton);
                 button_clear.setOnAction(this::handleClearButton);
                 button_cancel.setOnAction(this::handleCancelButton);

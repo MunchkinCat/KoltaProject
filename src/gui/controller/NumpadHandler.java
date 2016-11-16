@@ -18,7 +18,7 @@ public class NumpadHandler {
 
     private String pin;
     private String card;
-    private Amount withdrawal;
+    private Amount amount;
 
     private CashDispenser atm;
 
@@ -27,7 +27,7 @@ public class NumpadHandler {
         this.EVENT = event;
         this.pin = controller.getPin();
         this.card = controller.getCard();
-        this.withdrawal = new Amount(controller.getWithdrawal());
+        this.amount = new Amount(controller.getTransactionAmount());
         this.account = controller.getAccount();
         this.atm = controller.getAtm();
 //        this.LINE1 = controller.getScreen(1);
@@ -104,33 +104,33 @@ public class NumpadHandler {
         }
     }
 
-    // Checks that the withdrawal string represents
+    // Checks that the amount string represents
     // a valid withdrawal amount.
     // Returns what screen to configure.
-    // Throws Exception if ATM does not have enough cash for withdrawal.
+    // Throws Exception if ATM does not have enough cash for amount.
     public int checkWithdrawal() throws Exception {
         Amount currentBalance = new Amount(account.tentative());
-        if (withdrawal.toDouble() <= currentBalance.toDouble()
-                && withdrawal.toDouble() % 10 == 0) {
+        if (amount.toDouble() <= currentBalance.toDouble()
+                && amount.toDouble() % 10 == 0) {
             try {
-                atm.removeCash(withdrawal.toDouble());
-                account.withdraw(withdrawal.toDouble());
+                atm.removeCash(amount.toDouble());
+                account.withdraw(amount.toDouble());
             } catch (Exception e) {
                 throw e;
             } finally {
-                withdrawal.set(0);
+                amount.set(0);
             }
             return 11;
-        } else if (withdrawal.toDouble() > currentBalance.toDouble()) {
-            withdrawal.set(0);
+        } else if (amount.toDouble() > currentBalance.toDouble()) {
+            amount.set(0);
             return 8;
         } else {
-            withdrawal.set(0);
+            amount.set(0);
             return 9;
         }
     }
 
-    // Returns the updated withdrawal string.
+    // Returns the updated amount string.
     public Amount updateWithdrawal() {
         String sourceButton = EVENT.getSource().toString();
         /* NOTE FOR NEXT SECTION OF CODE:
@@ -140,10 +140,26 @@ public class NumpadHandler {
          * The accessed character is the number which the key represents.
          */
         try {
-            withdrawal.insert(sourceButton.charAt(sourceButton.length() - 2));
+            amount.insert(sourceButton.charAt(sourceButton.length() - 2));
         } catch (NumberFormatException e) {
             e.printStackTrace();
         }
-        return withdrawal;
+        return amount;
+    }
+
+    public Amount updateDeposit() {
+        String sourceButton = EVENT.getSource().toString();
+        /* NOTE FOR NEXT SECTION OF CODE:
+         * stringLength - 2 used because of (1) the zero-indexing and
+         * (2) the single quote character that is at the end of the
+         * String representation of the source button passed in.
+         * The accessed character is the number which the key represents.
+         */
+        try {
+            amount.insert(sourceButton.charAt(sourceButton.length() - 2), false);
+        } catch (NumberFormatException e) {
+            e.printStackTrace();
+        }
+        return amount;
     }
 }

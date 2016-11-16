@@ -22,14 +22,32 @@ public class Amount {
 
     // Inserts passed-in char just to the left of the decimal.
     public Amount insert(char newChar) throws NumberFormatException {
+        return this.insert(newChar, true);
+    }
+
+    // Use this one with second param set to false to insert into the 1-cent place.
+    public Amount insert(char newChar, boolean skipCents) throws NumberFormatException {
         int newInt = Integer.parseInt(newChar + "");
         String raw = this.amount + "";
         String newAmount = "";
-        for (char c : raw.toCharArray()) {
-            if (c == '.') {
-                newAmount += newInt + "" + c + "";
-            } else {
-                newAmount += c;
+        if (!skipCents) {
+            char previous = ' ';
+            for (char c : raw.toCharArray()) {
+                if (previous == '.') {
+                    newAmount += c + "" + previous;
+                } else if (c == '.') {
+                    previous = c;
+                } else {
+                    newAmount += c + "";
+                }
+            }
+        } else {
+            for (char c : raw.toCharArray()) {
+                if (c == '.') {
+                    newAmount += newInt + "" + c;
+                } else {
+                    newAmount += c;
+                }
             }
         }
         this.amount = Double.parseDouble(newAmount);
