@@ -115,7 +115,6 @@ public class NumpadHandler {
             try {
                 atm.removeCash(withdrawal.toDouble());
                 account.withdraw(withdrawal.toDouble());
-                ReceiptPrinter.printReceipt(account);
             } catch (Exception e) {
                 throw e;
             } finally {

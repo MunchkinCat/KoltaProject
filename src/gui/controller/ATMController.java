@@ -368,6 +368,8 @@ public class ATMController {
         switch (screenNum) {
             case 1: // Home screen
                 setCardTextActive(true);
+                setDepositTextActive(false);
+                button_cardslot.setOnAction(this::handleCardInsertion);
                 input_card.clear();
                 pin = "";
                 card = "";
@@ -388,9 +390,7 @@ public class ATMController {
                 button_enter.setOnAction(this::handleEnterButton);
                 break;
             case 4: // Card error
-                // Nothing special to be done here.
-                // Card insertion/removal button is
-                // active by default.
+                button_cardslot.setOnAction(this::handleCardInsertion);
                 break;
             case 5: // Transaction selection
                 button_screen_right2.setOnAction(this::handleScreenButton);
@@ -444,6 +444,7 @@ public class ATMController {
                 break;
             case 15: // End of transaction
                 label_receipt.setText(ReceiptPrinter.printReceipt(account));
+                button_cardslot.setOnAction(this::handleCardInsertion);
                 break;
             default:
                 break;
@@ -469,7 +470,7 @@ public class ATMController {
         // DEFAULT VALUES FOR ACTION HANDLER MAPPING
         // Set to non-null if it should be mapped for
         // every screen (i.e. button always active)
-        button_cardslot.setOnAction(this::handleCardInsertion);
+        button_cardslot.setOnAction(null);
         button_printer.setOnAction(this::handleReceiptButton);
         button_deposit.setOnAction(null);
         button_dispenser.setOnAction(null);
