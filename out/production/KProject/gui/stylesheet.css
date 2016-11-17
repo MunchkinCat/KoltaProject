@@ -1,0 +1,36 @@
+
+.root{
+    -fx-font-size: 10pt;
+    -fx-font-family: "Baskerville Old Face";
+    -fx-base: rgb(178, 216, 253);
+    -fx-background-color: #333333;
+}
+
+.text-field {
+    -fx-background-color: #666;
+}
+
+.label {
+    -fx-font-size: 10pt;
+    -fx-font-family: "Baskerville Old Face";
+    -fx-text-fill: white;
+    -fx-opacity: 0.6;
+}
+
+.label-bright {
+    -fx-font-size: 10pt;
+    -fx-font-family: "Baskerville Old Face";
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+}
+
+.button {
+    -fx-font-size: 10pt;
+    -fx-font-family: "Baskerville Old Face";
+    -fx-text-fill: black;
+    -fx-opacity: 0.6;
+}
+
+.background {
+    -fx-background-color: #333333;
+}
