@@ -14,7 +14,7 @@ public class ScreenDAO {
         screens[0][0] = "";
         screens[0][1] = "Welcome!";
         screens[0][2] = "Please insert your";
-        screens[0][3] = "(19-digit) ATM card:";
+        screens[0][3] = "ATM card:";
 
         // SCREEN 2
         screens[1][0] = "";

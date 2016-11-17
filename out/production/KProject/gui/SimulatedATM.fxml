@@ -35,7 +35,7 @@
             <Label fx:id="screen_row1" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" textAlignment="CENTER" GridPane.columnIndex="1" />
             <Label fx:id="screen_row2" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Welcome" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1" />
             <Label fx:id="screen_row3" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="please insert your" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <Label fx:id="screen_row4" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="19-digit ATM card #" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="screen_row4" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="ATM card #" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3" />
          </children>
       </GridPane>
    </center>
