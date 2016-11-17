@@ -221,7 +221,10 @@ public class ATMController {
                 }
                 break;
             case 7:
-                if (!deposit) {    // i.e. this is a withdrawal
+                if (transactionAmount.toString().length() >= 13) {
+                    screen_row2.setText("(ERROR: amount must");
+                    screen_row3.setText("be less than $10M)");
+                } else if (!deposit) {    // i.e. this is a withdrawal
                     transactionAmount = numpad.updateWithdrawal();
                 } else {           // i.e. this is a deposit
                     transactionAmount = numpad.updateDeposit();
@@ -437,9 +440,6 @@ public class ATMController {
                 screen_row3.setText(balance.toString());
                 break;
             case 7: // Request amount entry
-                if (!deposit) {
-                    transactionAmount.set(0);
-                }
                 button_clear.setOnAction(this::handleClearButton);
                 button_enter.setOnAction(this::handleEnterButton);
                 button_cancel.setOnAction(this::handleCancelButton);
@@ -447,6 +447,7 @@ public class ATMController {
                     screen_row2.setText("(Amount detected in");
                     screen_row3.setText("slot is " + transactionAmount.toString() + ")");
                 }
+                transactionAmount.set(0);
                 activateNumpad();
                 break;
             case 8: // Insufficient funds

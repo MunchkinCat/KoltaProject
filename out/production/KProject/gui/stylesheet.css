@@ -3,7 +3,11 @@
     -fx-font-size: 10pt;
     -fx-font-family: "Baskerville Old Face";
     -fx-base: rgb(178, 216, 253);
-    -fx-background-color: #333333;
+    -fx-background-color: #333;
+}
+
+.context-menu {
+    -fx-background-color: #444;
 }
 
 .text-field {
@@ -32,5 +36,5 @@
 }
 
 .background {
-    -fx-background-color: #333333;
+    -fx-background-color: #333;
 }

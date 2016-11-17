@@ -6,6 +6,10 @@
     -fx-background-color: #333;
 }
 
+.context-menu {
+    -fx-background-color: #444;
+}
+
 .text-field {
     -fx-background-color: #666;
 }
