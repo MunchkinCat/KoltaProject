@@ -36,6 +36,9 @@ public class Amount {
         String newAmount;
         if (!skipCents) {
             String strCents = Integer.toString(cents);
+            if (cents < 10) {
+                strCents = "0" + strCents;
+            }
             char high = strCents.charAt(0);
             char low = strCents.charAt(1);
             newAmount = dollars + "" + high + "." + low + "" + newInt;
