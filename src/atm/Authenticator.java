@@ -22,9 +22,6 @@ public class Authenticator {
     }
 
     public boolean validCard(String cardNum) {
-        if (cardNum.length() != 19) {
-            return false;
-        }
 
         List<Account> lines = getAccounts();
 

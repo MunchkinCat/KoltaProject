@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="04d2453e-b8ac-441c-b206-1d606dc58335" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/atm/TEMPTESTTHING.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/KProject/atm/TEMPTESTTHING.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/KProject/atm/Amount.class" afterPath="$PROJECT_DIR$/out/production/KProject/atm/Amount.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/atm/Amount.java" afterPath="$PROJECT_DIR$/src/atm/Amount.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/atm/Authenticator.java" afterPath="$PROJECT_DIR$/src/atm/Authenticator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/atm/accounts.txt" afterPath="$PROJECT_DIR$/src/atm/accounts.txt" />
     </list>
     <ignored path="KProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -21,6 +23,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/KProject$SimulATM.coverage" NAME="SimulATM Coverage Results" MODIFIED="1481222407765" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/KProject$TEMPTESTTHING.coverage" NAME="TEMPTESTTHING Coverage Results" MODIFIED="1481175553844" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>atm.*</FILTER>
     </SUITE>
@@ -34,7 +37,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Amount.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Amount.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/atm/Amount.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="36">
@@ -53,6 +56,80 @@
                 <element signature="e#2035#2036#0" expanded="true" />
                 <element signature="e#2069#2070#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScreenDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gui/controller/ScreenDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-972">
+              <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AccountDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/atm/AccountDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1206">
+              <caret line="92" column="48" selection-start-line="92" selection-start-column="48" selection-end-line="92" selection-end-column="48" />
+              <folding>
+                <element signature="method#detectNewline#0;class#AccountDAO#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ATMController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gui/controller/ATMController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="185">
+              <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+              <folding>
+                <element signature="docComment;class#ATMController#0" expanded="false" />
+                <element signature="e#1558#1605#0" expanded="false" />
+                <element signature="method#handleDispenserButton#0;class#ATMController#0" expanded="false" />
+                <element signature="method#isScreenButton#0;class#ATMController#0" expanded="false" />
+                <element signature="method#getScreen#0;class#ATMController#0" expanded="false" />
+                <element signature="e#12066#12115#0" expanded="false" />
+                <element signature="method#activateNumpad#0;class#ATMController#0" expanded="false" />
+                <element signature="method#resetAllButtons#0;class#ATMController#0" expanded="false" />
+                <element signature="e#17298#17342#0" expanded="false" />
+                <element signature="method#setCardTextActive#0;class#ATMController#0" expanded="false" />
+                <element signature="method#setDepositTextActive#0;class#ATMController#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Authenticator.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/atm/Authenticator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Account.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/atm/Account.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1062">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="accounts.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/atm/accounts.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" column="121" selection-start-line="2" selection-start-column="121" selection-end-line="2" selection-end-column="121" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -108,11 +185,9 @@
         <option value="$PROJECT_DIR$/src/SimulATM.java" />
         <option value="$PROJECT_DIR$/src/GenerateAccounts.java" />
         <option value="$PROJECT_DIR$/src/gui/controller/ScreenButtonHandler.java" />
-        <option value="$PROJECT_DIR$/src/atm/Authenticator.java" />
         <option value="$PROJECT_DIR$/src/atm/Account.java" />
         <option value="$PROJECT_DIR$/src/atm/PinFailTracker.java" />
         <option value="$PROJECT_DIR$/src/atm/AccountDAO.java" />
-        <option value="$PROJECT_DIR$/src/atm/accounts.txt" />
         <option value="$PROJECT_DIR$/src/gui/controller/NumpadHandler.java" />
         <option value="$PROJECT_DIR$/src/gui/stylesheet.css" />
         <option value="$PROJECT_DIR$/src/test.java" />
@@ -123,6 +198,8 @@
         <option value="$PROJECT_DIR$/src/atm/ReceiptPrinter.java" />
         <option value="$PROJECT_DIR$/src/atm/TEMPTESTTHING.java" />
         <option value="$PROJECT_DIR$/src/atm/Amount.java" />
+        <option value="$PROJECT_DIR$/src/atm/accounts.txt" />
+        <option value="$PROJECT_DIR$/src/atm/Authenticator.java" />
       </list>
     </option>
   </component>
@@ -808,8 +885,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.TEMPTESTTHING" />
-        <item index="1" class="java.lang.String" itemvalue="Application.SimulATM" />
+        <item index="0" class="java.lang.String" itemvalue="Application.SimulATM" />
+        <item index="1" class="java.lang.String" itemvalue="Application.TEMPTESTTHING" />
         <item index="2" class="java.lang.String" itemvalue="Application.test (1)" />
         <item index="3" class="java.lang.String" itemvalue="Application.test" />
         <item index="4" class="java.lang.String" itemvalue="Application.GenerateAccounts" />
@@ -840,12 +917,12 @@
       <workItem from="1479403041902" duration="1729000" />
       <workItem from="1480976327727" duration="8000" />
       <workItem from="1481064492089" duration="433000" />
-      <workItem from="1481135158201" duration="15016000" />
+      <workItem from="1481135158201" duration="16493000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101127000" />
+    <option name="totallyTimeSpent" value="102604000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -868,9 +945,9 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27087796" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27087796" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0770878" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0770878" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17662753" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -955,7 +1032,6 @@
           <caret line="412" column="76" selection-start-line="412" selection-start-column="76" selection-end-line="412" selection-end-column="76" />
           <folding>
             <element signature="docComment;class#ATMController#0" expanded="false" />
-            <element signature="method#handleCardInsertion#0;class#ATMController#0" expanded="false" />
             <element signature="e#1558#1605#0" expanded="false" />
             <element signature="method#handleDispenserButton#0;class#ATMController#0" expanded="false" />
             <element signature="method#isScreenButton#0;class#ATMController#0" expanded="false" />
@@ -992,7 +1068,6 @@
           <caret line="149" column="65" selection-start-line="149" selection-start-column="65" selection-end-line="149" selection-end-column="65" />
           <folding>
             <element signature="docComment;class#ATMController#0" expanded="false" />
-            <element signature="method#handleCardInsertion#0;class#ATMController#0" expanded="false" />
             <element signature="e#1558#1605#0" expanded="false" />
             <element signature="method#handleDispenserButton#0;class#ATMController#0" expanded="false" />
             <element signature="method#isScreenButton#0;class#ATMController#0" expanded="false" />
@@ -1020,7 +1095,6 @@
           <caret line="229" column="0" selection-start-line="229" selection-start-column="0" selection-end-line="229" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#ATMController#0" expanded="false" />
-            <element signature="method#handleCardInsertion#0;class#ATMController#0" expanded="false" />
             <element signature="e#1558#1605#0" expanded="false" />
             <element signature="method#handleDispenserButton#0;class#ATMController#0" expanded="false" />
             <element signature="method#isScreenButton#0;class#ATMController#0" expanded="false" />
@@ -1065,7 +1139,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#ATMController#0" expanded="false" />
-            <element signature="method#handleCardInsertion#0;class#ATMController#0" expanded="false" />
             <element signature="e#1558#1605#0" expanded="false" />
             <element signature="method#handleDispenserButton#0;class#ATMController#0" expanded="false" />
             <element signature="method#isScreenButton#0;class#ATMController#0" expanded="false" />
@@ -1103,7 +1176,6 @@
           <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
           <folding>
             <element signature="docComment;class#ATMController#0" expanded="false" />
-            <element signature="method#handleCardInsertion#0;class#ATMController#0" expanded="false" />
             <element signature="e#1558#1605#0" expanded="false" />
             <element signature="method#handleDispenserButton#0;class#ATMController#0" expanded="false" />
             <element signature="method#isScreenButton#0;class#ATMController#0" expanded="false" />
@@ -1146,7 +1218,6 @@
           <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
           <folding>
             <element signature="docComment;class#ATMController#0" expanded="false" />
-            <element signature="method#handleCardInsertion#0;class#ATMController#0" expanded="false" />
             <element signature="e#1558#1605#0" expanded="false" />
             <element signature="method#handleDispenserButton#0;class#ATMController#0" expanded="false" />
             <element signature="method#isScreenButton#0;class#ATMController#0" expanded="false" />
@@ -1253,34 +1324,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/atm/test.java" />
-    <entry file="file://$PROJECT_DIR$/src/atm/accounts.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/controller/ATMController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3618">
-          <caret line="223" column="63" selection-start-line="223" selection-start-column="63" selection-end-line="223" selection-end-column="63" />
-          <folding>
-            <element signature="docComment;class#ATMController#0" expanded="false" />
-            <element signature="method#handleCardInsertion#0;class#ATMController#0" expanded="false" />
-            <element signature="e#1558#1605#0" expanded="false" />
-            <element signature="method#handleDispenserButton#0;class#ATMController#0" expanded="false" />
-            <element signature="method#isScreenButton#0;class#ATMController#0" expanded="false" />
-            <element signature="method#getScreen#0;class#ATMController#0" expanded="false" />
-            <element signature="e#12066#12115#0" expanded="false" />
-            <element signature="method#activateNumpad#0;class#ATMController#0" expanded="false" />
-            <element signature="method#resetAllButtons#0;class#ATMController#0" expanded="false" />
-            <element signature="e#17298#17342#0" expanded="false" />
-            <element signature="method#setCardTextActive#0;class#ATMController#0" expanded="false" />
-            <element signature="method#setDepositTextActive#0;class#ATMController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/SimulatedATM.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
@@ -1288,32 +1331,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="666">
           <caret line="37" column="157" selection-start-line="37" selection-start-column="157" selection-end-line="37" selection-end-column="157" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/controller/ScreenDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/atm/AccountDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="92" column="48" selection-start-line="92" selection-start-column="48" selection-end-line="92" selection-end-column="48" />
-          <folding>
-            <element signature="method#detectNewline#0;class#AccountDAO#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/atm/Authenticator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="54" column="23" selection-start-line="54" selection-start-column="23" selection-end-line="54" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -1418,14 +1435,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/atm/Account.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-180">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/atm/ReceiptPrinter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -1460,6 +1469,68 @@
             <element signature="e#2035#2036#0" expanded="true" />
             <element signature="e#2069#2070#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/controller/ScreenDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-972">
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/atm/accounts.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="121" selection-start-line="2" selection-start-column="121" selection-end-line="2" selection-end-column="121" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/atm/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1062">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/atm/AccountDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1206">
+          <caret line="92" column="48" selection-start-line="92" selection-start-column="48" selection-end-line="92" selection-end-column="48" />
+          <folding>
+            <element signature="method#detectNewline#0;class#AccountDAO#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/controller/ATMController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#ATMController#0" expanded="false" />
+            <element signature="e#1558#1605#0" expanded="false" />
+            <element signature="method#handleDispenserButton#0;class#ATMController#0" expanded="false" />
+            <element signature="method#isScreenButton#0;class#ATMController#0" expanded="false" />
+            <element signature="method#getScreen#0;class#ATMController#0" expanded="false" />
+            <element signature="e#12066#12115#0" expanded="false" />
+            <element signature="method#activateNumpad#0;class#ATMController#0" expanded="false" />
+            <element signature="method#resetAllButtons#0;class#ATMController#0" expanded="false" />
+            <element signature="e#17298#17342#0" expanded="false" />
+            <element signature="method#setCardTextActive#0;class#ATMController#0" expanded="false" />
+            <element signature="method#setDepositTextActive#0;class#ATMController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/atm/Authenticator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
