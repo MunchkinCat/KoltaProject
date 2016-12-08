@@ -1,5 +1,9 @@
 package atm;
 
+import java.math.BigDecimal;
+import java.math.BigInteger;
+import java.math.RoundingMode;
+
 /**
  * Created by Andrew Shubin on 11/10/16.
  */
@@ -28,33 +32,16 @@ public class Amount {
     // Use this one with second param set to false to insert into the 1-cent place.
     public Amount insert(char newChar, boolean skipCents) throws NumberFormatException {
         int newInt = Integer.parseInt(newChar + "");
-        String raw = this.amount + "";
-        String newAmount = "";
-        boolean lastAddedWasDecimal = false;
+        long dollars = (long) (Math.floor(this.amount * 100) / 100);
+        int cents = getCentsAsInt(this.amount, dollars);
+        String newAmount;
         if (!skipCents) {
-            char previous = ' ';
-            for (char c : raw.toCharArray()) {
-                lastAddedWasDecimal = false;
-                if (previous == '.') {
-                    newAmount += c + "" + previous;
-                    lastAddedWasDecimal = true;
-                } else if (c != '.') {
-                    newAmount += c;
-                }
-                previous = c;
-            }
-            if (lastAddedWasDecimal) {
-                newAmount += "0";
-            }
-            newAmount += newInt + "";
+            String strCents = Integer.toString(cents);
+            char high = strCents.charAt(0);
+            char low = strCents.charAt(1);
+            newAmount = dollars + "" + high + "." + low + "" + newInt;
         } else {
-            for (char c : raw.toCharArray()) {
-                if (c == '.') {
-                    newAmount += newInt + "" + c;
-                } else {
-                    newAmount += c;
-                }
-            }
+            newAmount = (dollars * 10 + newInt) + "." + cents;
         }
         this.amount = Double.parseDouble(newAmount);
         return this;
@@ -89,9 +76,16 @@ public class Amount {
     }
 
     public String toString() {
-        // TODO: Have the toString method of Amount insert commas
+        return Amount.toString(this.amount);
+    }
+
+    public double toDouble() {
+        return this.amount;
+    }
+
+    public static String toString(double amount) {
         String rep = "$";
-        String raw = this.amount + "";
+        String raw = String.format("%f", amount);
         boolean pastDecimal = false;
         int numPastDecimal = 0;
         for (int i = 0; i < raw.length(); i++) {
@@ -113,11 +107,7 @@ public class Amount {
         return insertCommas(rep);
     }
 
-    public double toDouble() {
-        return this.amount;
-    }
-
-    private String insertCommas(String commaless) {
+    private static String insertCommas(String commaless) {
         String dollars = commaless.substring(1, commaless.length() - 3); // Cuts off the '$' and the '.' and cents
         String cents = commaless.substring(commaless.length() - 3);
         String amount = "$";
@@ -127,15 +117,26 @@ public class Amount {
         return amount + cents;
     }
 
-    private String conditionalComma(int position, int length) {
+    private static String conditionalComma(int position, int length) {
         int charsLeft = length - position - 1;  // -1 for the char that is inserted
-                                                // on the same line that this method
-                                                // is called on.
+        // on the same line that this method
+        // is called on.
         if (charsLeft % 3 == 0 && charsLeft >= 3) {
             return ",";
         } else {
             return "";
         }
+    }
+
+    private static int getCentsAsInt(double amount, long dollars) {
+        int cents;
+        BigDecimal bigAmount = new BigDecimal(amount);
+        BigDecimal bigDollars = new BigDecimal(dollars);
+        BigDecimal rawCents = bigAmount.subtract(bigDollars);
+        rawCents = rawCents.multiply(new BigDecimal("100"));
+        rawCents = rawCents.setScale(0, RoundingMode.HALF_UP);
+        cents = rawCents.intValueExact();
+        return cents;
     }
 
     private static double toDouble(String amount)
