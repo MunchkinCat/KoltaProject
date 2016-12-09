@@ -23,11 +23,13 @@ public class GenerateAccounts {
         File file = FileUtils.getFile(path);
         Account a = new Account("Pete", "Smith", "1111", "1111111111111111111");
         Account b = new Account("Jane", "Smith", "0000", "0000000000000000000");
+        Account c = new Account("Steve", "Craft", "3333", "3333");
         ObjectMapper mapper = new ObjectMapper();
         String json;
         try {
             json = mapper.writeValueAsString(a) + "\n";
             json += mapper.writeValueAsString(b) + "\n";
+            json += mapper.writeValueAsString(c) + "\n";
             FileUtils.writeStringToFile(file, json, "UTF-8", false);
         } catch (Exception e) {
             e.printStackTrace();

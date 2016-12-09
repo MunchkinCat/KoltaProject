@@ -11,7 +11,7 @@ public class DepositSlot {
         this.account = account;
     }
 
-    public void depositCheck(double amount, int checkNum) {
+    public void depositCheck(double amount) {
         account.deposit(amount);
     }
 

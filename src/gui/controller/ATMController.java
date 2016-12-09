@@ -142,6 +142,7 @@ public class ATMController {
                 configure(5);
                 break;
             case 7:
+                transactionAmount.set(0);
                 configure(7);
                 break;
             case 8:
@@ -179,6 +180,9 @@ public class ATMController {
                 break;
             case 4:
                 configure(1);
+                break;
+            case 5:
+                configure(15);
                 break;
             case 6:
                 configure(5);
@@ -429,6 +433,8 @@ public class ATMController {
                 break;
             case 5: // Transaction selection
                 deposit = false;
+                transactionAmount.set(0);
+                button_cancel.setOnAction(this::handleCancelButton);
                 button_screen_right2.setOnAction(this::handleScreenButton);
                 button_screen_right3.setOnAction(this::handleScreenButton);
                 button_screen_right4.setOnAction(this::handleScreenButton);
@@ -444,10 +450,13 @@ public class ATMController {
                 button_enter.setOnAction(this::handleEnterButton);
                 button_cancel.setOnAction(this::handleCancelButton);
                 if (deposit) {
+                    screen_row1.setText("Please confirm amount:");
                     screen_row2.setText("(Amount detected in");
                     screen_row3.setText("slot is " + transactionAmount.toString() + ")");
+                    screen_row4.setText(transactionAmount.toString());
+                } else {
+                    transactionAmount.set(0);
                 }
-                transactionAmount.set(0);
                 activateNumpad();
                 break;
             case 8: // Insufficient funds
@@ -549,5 +558,8 @@ public class ATMController {
     private void setDepositTextActive(boolean active) {
         input_deposit.setEditable(active);
         input_deposit.setDisable(!active);
+        if (!active) {
+            input_deposit.clear();
+        }
     }
 }
